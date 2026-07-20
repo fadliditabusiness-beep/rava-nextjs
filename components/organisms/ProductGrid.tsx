@@ -1,16 +1,53 @@
 import CollectionProductCard from "@/components/molecules/CollectionProductCard";
 import { collectionProducts } from "@/lib/data";
+import type { CollectionProduct } from "@/lib/types";
 
 type ProductGridProps = {
   selectedCategory?: string;
+  selectedSort?: string;
 };
 
-export default function ProductGrid({ selectedCategory }: ProductGridProps) {
-  const products = selectedCategory
+function byRibbonFirst(ribbon: CollectionProduct["ribbon"]) {
+  return (a: CollectionProduct, b: CollectionProduct) =>
+    (a.ribbon === ribbon ? 0 : 1) - (b.ribbon === ribbon ? 0 : 1);
+}
+
+function sortProducts(
+  products: CollectionProduct[],
+  sort?: string,
+): CollectionProduct[] {
+  const sorted = [...products];
+
+  switch (sort) {
+    case "Terpopuler":
+      return sorted.sort(byRibbonFirst("Best Seller"));
+    case "Harga: Rendah ke Tinggi":
+      return sorted.sort(
+        (a, b) =>
+          a.marketplace.whatsapp.afterDiscount -
+          b.marketplace.whatsapp.afterDiscount,
+      );
+    case "Harga: Tinggi ke Rendah":
+      return sorted.sort(
+        (a, b) =>
+          b.marketplace.whatsapp.afterDiscount -
+          a.marketplace.whatsapp.afterDiscount,
+      );
+    default:
+      return sorted.sort(byRibbonFirst("New"));
+  }
+}
+
+export default function ProductGrid({
+  selectedCategory,
+  selectedSort,
+}: ProductGridProps) {
+  const filtered = selectedCategory
     ? collectionProducts.filter(
         (product) => product.category === selectedCategory,
       )
     : collectionProducts;
+  const products = sortProducts(filtered, selectedSort);
 
   return (
     <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
