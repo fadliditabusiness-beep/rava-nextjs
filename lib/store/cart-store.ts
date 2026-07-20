@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-export const SHIPPING_ESTIMATE = 15000;
+export const SHIPPING_ESTIMATE = 0;
 
 export type CartItem = {
   slug: string;

@@ -102,9 +102,7 @@ export default function CartSection() {
                   <button
                     type="button"
                     aria-label={`Decrease quantity of ${item.name}`}
-                    onClick={() =>
-                      updateQuantity(item.slug, item.quantity - 1)
-                    }
+                    onClick={() => updateQuantity(item.slug, item.quantity - 1)}
                     className="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary transition-colors"
                   >
                     <MaterialIcon name="remove" className="text-sm" />
@@ -115,9 +113,7 @@ export default function CartSection() {
                   <button
                     type="button"
                     aria-label={`Increase quantity of ${item.name}`}
-                    onClick={() =>
-                      updateQuantity(item.slug, item.quantity + 1)
-                    }
+                    onClick={() => updateQuantity(item.slug, item.quantity + 1)}
                     className="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary transition-colors"
                   >
                     <MaterialIcon name="add" className="text-sm" />
@@ -153,25 +149,25 @@ export default function CartSection() {
 
       <aside className="lg:col-span-4">
         <div className="bg-surface-container-low shadow-xl rounded-xl p-stack-md lg:p-8 sticky top-[180px] border border-surface-variant/30">
-          <h2 className="text-headline-md font-headline-md text-primary mb-6">
+          {/* <h2 className="text-headline-md font-headline-md text-primary mb-6">
             Order Summary
-          </h2>
+          </h2> */}
           <div className="space-y-4 mb-8">
-            <div className="flex justify-between text-body-md">
+            {/* <div className="flex justify-between text-body-md">
               <span className="text-on-surface-variant">Subtotal</span>
               <span className="text-on-surface font-semibold">
                 {formatRupiah(subtotal)}
               </span>
-            </div>
-            <div className="flex justify-between text-body-md">
+            </div> */}
+            {/* <div className="flex justify-between text-body-md">
               <span className="text-on-surface-variant">
                 Shipping (Estimated)
               </span>
               <span className="text-on-surface font-semibold">
                 {formatRupiah(shipping)}
               </span>
-            </div>
-            <div className="h-px bg-outline-variant/30 my-2" />
+            </div> */}
+            {/* <div className="h-px bg-outline-variant/30 my-2" /> */}
             <div className="flex justify-between">
               <span className="font-headline-md text-headline-md text-primary">
                 Grand Total
@@ -189,11 +185,11 @@ export default function CartSection() {
               <span>Proceed to Checkout</span>
               <MaterialIcon name="arrow_forward" />
             </Link>
-            <p className="text-center text-sm text-on-surface-variant">
+            {/* <p className="text-center text-sm text-on-surface-variant">
               Shipping calculated at checkout
-            </p>
+            </p> */}
           </div>
-          <div className="mt-8 pt-8 border-t border-outline-variant/30 grid grid-cols-2 gap-4">
+          {/* <div className="mt-8 pt-8 border-t border-outline-variant/30 grid grid-cols-2 gap-4">
             <div className="flex flex-col items-center text-center gap-2">
               <MaterialIcon
                 name="verified_user"
@@ -214,7 +210,7 @@ export default function CartSection() {
                 Eco-Packaging
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </aside>
     </div>

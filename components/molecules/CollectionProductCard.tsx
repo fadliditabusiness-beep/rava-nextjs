@@ -13,7 +13,11 @@ export default function CollectionProductCard({
   reviewCount,
   image,
   ribbon,
+  marketplace,
 }: CollectionProduct) {
+  const { beforeDiscount, afterDiscount } = marketplace.whatsapp;
+  const isDiscounted = afterDiscount < beforeDiscount;
+
   return (
     <div className="product-card bg-surface-container-lowest rounded-xl p-8 flex flex-col items-center text-center relative overflow-hidden group">
       {ribbon && (
@@ -55,9 +59,19 @@ export default function CollectionProductCard({
       <p className="font-body-md text-on-surface-variant text-sm mb-2">
         {description}
       </p>
-      <span className="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-[12px] font-bold">
+      <span className="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-[12px] font-bold mb-2">
         {ageRange}
       </span>
+      <div className="flex items-center gap-2">
+        {isDiscounted && (
+          <span className="text-on-surface-variant text-sm line-through">
+            Rp{beforeDiscount.toLocaleString("id-ID")}
+          </span>
+        )}
+        <span className="text-primary font-bold">
+          Rp{afterDiscount.toLocaleString("id-ID")}
+        </span>
+      </div>
     </div>
   );
 }

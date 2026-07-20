@@ -96,7 +96,6 @@ ${itemLines}`,
 
       `*RINGKASAN*
 Subtotal : ${formatRupiah(subtotal)}
-Ongkir   : ${formatRupiah(shipping)}
 TOTAL    : *${formatRupiah(total)}*`,
 
       `*ALAMAT*
@@ -243,12 +242,12 @@ ${kodePos}`,
                 {formatRupiah(subtotal)}
               </span>
             </div>
-            <div className="flex justify-between text-body-md">
+            {/* <div className="flex justify-between text-body-md">
               <span className="text-on-surface-variant">Ongkir</span>
               <span className="text-on-surface font-semibold">
                 {formatRupiah(shipping)}
               </span>
-            </div>
+            </div> */}
             <div className="h-px bg-outline-variant/30 my-2" />
             <div className="flex justify-between">
               <span className="font-headline-md text-headline-md text-primary">
