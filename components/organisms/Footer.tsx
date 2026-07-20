@@ -6,16 +6,16 @@ import { siteConfig } from "@/lib/data";
 
 const exploreLinks = [
   { label: "Home", href: "/" },
-  { label: "Collections", href: "/products" },
+  // { label: "Collections", href: "/products" },
   { label: "Products", href: "/products" },
-  { label: "Reviews", href: "/#reviews" },
+  // { label: "Reviews", href: "/#reviews" },
 ];
 
 const supportLinks = [
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/#contact" },
-  { label: "Shipping", href: "/#shipping" },
-  { label: "Returns", href: "/#returns" },
+  // { label: "Shipping", href: "/#shipping" },
+  // { label: "Returns", href: "/#returns" },
 ];
 
 export default function Footer() {
@@ -36,8 +36,9 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-on-surface-variant font-body-md text-body-md mb-8">
-            Playful Sophistication. Scandinavia&apos;s finest educational tools
-            for the leaders of tomorrow.
+            RAVA Toys menghadirkan mainan edukatif, sensory play, dan buku
+            aktivitas yang membantu anak belajar, berkreasi, dan berkembang
+            melalui pengalaman bermain yang menyenangkan.
           </p>
           <div className="flex gap-4">
             <a

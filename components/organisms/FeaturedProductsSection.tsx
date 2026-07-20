@@ -7,8 +7,8 @@ export default function FeaturedProductsSection() {
     <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-white">
       <div className="max-w-container-max mx-auto">
         <SectionHeading
-          title="Our Top Rated Tools"
-          subtitle="Proven by parents, loved by little ones. These are our most requested educational items."
+          title="Produk Pilihan RAVA Toys"
+          subtitle="Temukan koleksi mainan edukatif dan aktivitas belajar yang dirancang untuk menemani tumbuh kembang si kecil."
           align="center"
           className="mb-16"
         />

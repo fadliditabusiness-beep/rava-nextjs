@@ -33,60 +33,128 @@ export const navLinks = [
   { label: "Kontak", href: "/#contact" },
 ];
 
-export const heroImage =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuA3z8s_JKbQpjxyUHKkNEV-rd-wiGDlyPB2DEhbmHDOUxjNbATv5-2kjXPRb7bzTV609CZeKehawenqADpQ0BdhJf1bRqBs7tHUCTMX2MsjBMdUQfUen1vIDOdpfnNtNG_mnuh4gKRpOtnXE2vB8iuL0ES7CvYGlZarNOCLD4TvVA-NwhgNDxCaRLRsWPF1VrLRbI2wQrNf5PjoyIBnmtUMsS5RzYiFbeOUh_DsFhdY50opyj2IvnyVWA";
+export const heroImage = "/assets/images/hero-home.png";
 
 export const trustStats = [
-  { value: "10k+", label: "Anak Bahagia", color: "text-primary" },
-  { value: "500+", label: "Ulasan Bintang 5", color: "text-secondary" },
   {
-    value: "100%",
-    label: "Material Aman",
-    color: "text-on-tertiary-container",
+    value: "Material Aman",
+    label: "Dipilih untuk Anak",
+    color: "text-primary",
   },
-  { value: "Fast", label: "Pengiriman Cepat", color: "text-primary" },
+  {
+    value: "Sensory Learning",
+    label: "Belajar Sambil Bermain",
+    color: "text-primary",
+  },
+  {
+    value: "Aktivitas Kreatif",
+    label: "Melatih Imajinasi",
+    color: "text-primary",
+  },
+  {
+    value: "Pengiriman Cepat",
+    label: "Ke Seluruh Indonesia",
+    color: "text-primary",
+  },
+  // {
+  //   value: "100%",
+  //   label: "Material Aman",
+  //   color: "text-on-tertiary-container",
+  // },
+  // { value: "Fast", label: "Pengiriman Cepat", color: "text-primary" },
 ];
+
+// export const features: Feature[] = [
+//   {
+//     icon: "verified_user",
+//     title: "Material Aman Bersertifikat",
+//     description: "Non-toxic, sustainable wood and BPA-free materials only.",
+//     iconBg: "bg-primary-fixed",
+//     iconColor: "text-primary",
+//   },
+//   {
+//     icon: "school",
+//     title: "Fokus Edukatif",
+//     description: "Curriculum-inspired designs that spark meaningful growth.",
+//     iconBg: "bg-secondary-container",
+//     iconColor: "text-secondary",
+//   },
+//   {
+//     icon: "fitness_center",
+//     title: "Motorik Halus",
+//     description: "Improving hand-eye coordination through tactile interaction.",
+//     iconBg: "bg-tertiary-fixed",
+//     iconColor: "text-on-tertiary-container",
+//   },
+//   {
+//     icon: "palette",
+//     title: "Kreativitas Tanpa Batas",
+//     description: "Open-ended play that lets their imagination run wild.",
+//     iconBg: "bg-primary-fixed",
+//     iconColor: "text-primary",
+//   },
+//   {
+//     icon: "phonelink_off",
+//     title: "Bebas Gadget",
+//     description: "Real-world engagement that replaces digital distractions.",
+//     iconBg: "bg-secondary-container",
+//     iconColor: "text-secondary",
+//   },
+//   {
+//     icon: "child_care",
+//     title: "Belajar Sambil Bermain",
+//     description: "Because every moment is a chance to learn something new.",
+//     iconBg: "bg-tertiary-fixed",
+//     iconColor: "text-on-tertiary-container",
+//   },
+// ];
 
 export const features: Feature[] = [
   {
     icon: "verified_user",
-    title: "Material Aman Bersertifikat",
-    description: "Non-toxic, sustainable wood and BPA-free materials only.",
+    title: "Material Aman",
+    description:
+      "Menggunakan material yang aman dan nyaman untuk mendukung aktivitas bermain anak setiap hari.",
     iconBg: "bg-primary-fixed",
     iconColor: "text-primary",
   },
   {
     icon: "school",
-    title: "Fokus Edukatif",
-    description: "Curriculum-inspired designs that spark meaningful growth.",
+    title: "Bermain Sambil Belajar",
+    description:
+      "Dirancang untuk membantu mengembangkan logika, kreativitas, dan rasa ingin tahu melalui aktivitas yang menyenangkan.",
     iconBg: "bg-secondary-container",
     iconColor: "text-secondary",
   },
   {
     icon: "fitness_center",
-    title: "Motorik Halus",
-    description: "Improving hand-eye coordination through tactile interaction.",
+    title: "Melatih Motorik Halus",
+    description:
+      "Membantu meningkatkan koordinasi tangan dan mata serta keterampilan motorik melalui permainan interaktif.",
     iconBg: "bg-tertiary-fixed",
     iconColor: "text-on-tertiary-container",
   },
   {
     icon: "palette",
-    title: "Kreativitas Tanpa Batas",
-    description: "Open-ended play that lets their imagination run wild.",
+    title: "Mengembangkan Kreativitas",
+    description:
+      "Memberikan ruang bagi anak untuk berimajinasi, bereksplorasi, dan menciptakan ide-ide baru.",
     iconBg: "bg-primary-fixed",
     iconColor: "text-primary",
   },
   {
     icon: "phonelink_off",
-    title: "Bebas Gadget",
-    description: "Real-world engagement that replaces digital distractions.",
+    title: "Screen-Free Play",
+    description:
+      "Mengurangi waktu layar dengan aktivitas bermain yang lebih aktif, seru, dan penuh interaksi.",
     iconBg: "bg-secondary-container",
     iconColor: "text-secondary",
   },
   {
     icon: "child_care",
-    title: "Belajar Sambil Bermain",
-    description: "Because every moment is a chance to learn something new.",
+    title: "Tumbuh Bersama Bermain",
+    description:
+      "Setiap permainan menjadi pengalaman belajar yang membantu anak berkembang dengan percaya diri.",
     iconBg: "bg-tertiary-fixed",
     iconColor: "text-on-tertiary-container",
   },
@@ -158,33 +226,6 @@ export const categories: Category[] = [
   },
 ];
 
-export const trendingProducts: TrendingProduct[] = [
-  {
-    slug: "bot-1-explorer",
-    name: "Bot-1 Explorer",
-    description: "First steps into coding logic.",
-    price: 45,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA718x4eBIsaeKqWH1qT1iJNI-aD2Zu3sIkPIjPH8PV2ppB_nCnjO54lub_FvnqTJASvE5io7oFFDPpfOw3XbCSVr2laO3XbwJlhtVTbMYQ_jndtbCeO8Inv-JKI8PBj2dGVSq6X63oV9ZwRWbtD3P9gSri3VmssuVNkarRHWkEPQSjZW-zh5iOuRZgnYtOM7WtgDfGLM6P5E9Dw23cT9Aumgro72lc9tXvYWhy_35YzlDuA3L2l5DKYw",
-  },
-  {
-    slug: "light-prisms",
-    name: "Light Prisms",
-    description: "Discover the magic of physics.",
-    price: 28,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDtMQsaryy5ofJbr26yaMTA6fMSoyyjmjOuH0YdPYHPdCFo_FcUBQgYhKCYxMwvLL754L7L6o-Wg97u7PBji7AiUZznE5_bz9H-25w4OlB1K5h_juq63Ax3fcxLH7E0WULYqv0OSwLJ_y0yryBq7aLEYoKYmcTyEVeVcMygBfZv15oOHyfMvdcdTxKGq8PpPGxpoAZKVWJ0Asf2d9HEXDVD2eqpBiu-FyN316NulwLM-k9OAldgoLA1sw",
-  },
-  {
-    slug: "grow-with-me-kit",
-    name: "Grow-With-Me Kit",
-    description: "Garden and nature exploration.",
-    price: 32,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCGa6U0fDaecpuaWu1efxg1xJdSx4GxcecaA1VmUIdnNPDEC58oCWB5nOkK5IW1l4mzw76Orxwi5e8c7Wq-ki2y26kwDcJewbHSf4Cc07ybXXFHp3LI4IAMhxxUzSVDAX0V5vhULQk68PhoSt16BKH8wEcF3vj1vsETX6szMQ0YYi79Gj58HDKfeOKz8MCKtsmva34sY-e0s4PqnGikyixrHxZMeFVfIqSiTlq5orLTUfFJJL8upLgvXQ",
-  },
-];
-
 export const testimonials: Testimonial[] = [
   {
     name: "Sarah Jenkins",
@@ -227,7 +268,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Buku Mewarnai",
     description:
       "Mewarnai sesuai angka untuk melatih fokus dan pengenalan warna.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 25,
     marketplace: {
       shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
@@ -285,7 +326,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Buku Mewarnai",
     description:
       "Lanjutan seri mewarnai angka dengan gambar yang lebih menantang.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 25,
     marketplace: {
       shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
@@ -342,7 +383,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Buku Mewarnai",
     description:
       "Mewarnai sambil menjiplak garis bentuk hewan untuk motorik halus.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 28,
     marketplace: {
       shopee: { beforeDiscount: 28000, afterDiscount: 28000 },
@@ -354,6 +395,7 @@ export const collectionProducts: CollectionProduct[] = [
     reviewCount: 21,
     ribbon: "Best Seller",
     featured: true,
+    trending: true,
     image:
       "/assets/images/products/coloring-book/coloring-tracing-animal-part-1.png",
     thumbnails: [
@@ -400,7 +442,7 @@ export const collectionProducts: CollectionProduct[] = [
     name: "Coloring & Tracing Buah",
     category: "Buku Mewarnai",
     description: "Kenali nama-nama buah sambil mewarnai dan menjiplak garis.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 28,
     marketplace: {
       shopee: { beforeDiscount: 28000, afterDiscount: 28000 },
@@ -456,7 +498,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Buku Mewarnai",
     description:
       "Jelajahi hewan-hewan laut lewat aktivitas mewarnai dan menjiplak.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 28,
     marketplace: {
       shopee: { beforeDiscount: 28000, afterDiscount: 28000 },
@@ -512,7 +554,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Montessori",
     description:
       "Toples aktivitas sensorik berisi pompom, kancing, dan kartu tugas edukatif.",
-    ageRange: "Ages 2-5",
+    ageRange: "Umur 2-5",
     price: 45,
     marketplace: {
       shopee: { beforeDiscount: 45000, afterDiscount: 45000 },
@@ -569,7 +611,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Montessori",
     description:
       "Matras puzzle bertekstur untuk eksplorasi raba dan stimulasi sensorik anak.",
-    ageRange: "Ages 1-4",
+    ageRange: "Umur 1-4",
     price: 55,
     marketplace: {
       shopee: { beforeDiscount: 55000, afterDiscount: 55000 },
@@ -624,7 +666,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Poster Edukasi",
     description:
       "Poster edukasi mengenal nama hewan darat dalam Bahasa Indonesia dan Inggris.",
-    ageRange: "Ages 2+",
+    ageRange: "Umur 2+",
     price: 15,
     marketplace: {
       shopee: { beforeDiscount: 15000, afterDiscount: 15000 },
@@ -636,6 +678,7 @@ export const collectionProducts: CollectionProduct[] = [
     reviewCount: 34,
     ribbon: "Best Seller",
     featured: false,
+    trending: true,
     image: "/assets/images/products/poster/hewan-darat.png",
     thumbnails: ["/assets/images/products/poster/hewan-darat.png"],
     accordion: [
@@ -678,7 +721,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Poster Edukasi",
     description:
       "Poster edukasi mengenal nama biota laut dalam Bahasa Indonesia dan Inggris.",
-    ageRange: "Ages 2+",
+    ageRange: "Umur 2+",
     price: 15,
     marketplace: {
       shopee: { beforeDiscount: 15000, afterDiscount: 15000 },
@@ -730,7 +773,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Poster Edukasi",
     description:
       "Poster edukasi mengenal nama hewan udara dalam Bahasa Indonesia dan Inggris.",
-    ageRange: "Ages 2+",
+    ageRange: "Umur 2+",
     price: 15,
     marketplace: {
       shopee: { beforeDiscount: 15000, afterDiscount: 15000 },
@@ -782,7 +825,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan laminasi tulis-hapus untuk belajar mengenal huruf A-Z bersama gambar.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -794,6 +837,7 @@ export const collectionProducts: CollectionProduct[] = [
     reviewCount: 42,
     ribbon: "Best Seller",
     featured: false,
+    trending: true,
     image: "/assets/images/products/wipe-and-clean/alfabet.png",
     thumbnails: ["/assets/images/products/wipe-and-clean/alfabet.png"],
     accordion: [
@@ -839,7 +883,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan laminasi tulis-hapus untuk berlatih menulis angka 0 sampai 10.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -894,7 +938,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan laminasi tulis-hapus untuk mengenal nama hari dalam Bahasa Indonesia dan Inggris.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 18,
     marketplace: {
       shopee: { beforeDiscount: 18000, afterDiscount: 18000 },
@@ -949,7 +993,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan laminasi tulis-hapus untuk mengenal nama bulan dalam Bahasa Indonesia dan Inggris.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 18,
     marketplace: {
       shopee: { beforeDiscount: 18000, afterDiscount: 18000 },
@@ -1006,7 +1050,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan laminasi tulis-hapus untuk mengenal 12 macam bentuk geometris.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 18,
     marketplace: {
       shopee: { beforeDiscount: 18000, afterDiscount: 18000 },
@@ -1062,7 +1106,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema kelinci lucu.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1119,7 +1163,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan ilustrasi bertema imut.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1176,7 +1220,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi dokter.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1233,7 +1277,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi polisi.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1290,7 +1334,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan ilustrasi bertema sekolah.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1348,7 +1392,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi tentara.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1406,7 +1450,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema unicorn yang lucu.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1465,7 +1509,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Wipe & Clean",
     description:
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema hewan liar.",
-    ageRange: "Ages 4+",
+    ageRange: "Umur 4+",
     price: 20,
     marketplace: {
       shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
@@ -1522,7 +1566,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Worksheet",
     description:
       "Buku mewarnai bertema unicorn dengan 13 halaman ilustrasi bergaris tebal.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 25,
     marketplace: {
       shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
@@ -1577,7 +1621,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Worksheet",
     description:
       "Buku mewarnai bertema permainan tradisional Indonesia seperti congklak dan engklek.",
-    ageRange: "Ages 3+",
+    ageRange: "Umur 3+",
     price: 25,
     marketplace: {
       shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
@@ -1634,7 +1678,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
-    ageRange: "Ages 5+",
+    ageRange: "Umur 5+",
     price: 30,
     marketplace: {
       shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
@@ -1646,6 +1690,7 @@ export const collectionProducts: CollectionProduct[] = [
     reviewCount: 24,
     ribbon: "Best Seller",
     featured: true,
+    trending: true,
     image: "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
     thumbnails: [
       "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
@@ -1694,7 +1739,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
-    ageRange: "Ages 5+",
+    ageRange: "Umur 5+",
     price: 30,
     marketplace: {
       shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
@@ -1752,7 +1797,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
-    ageRange: "Ages 5+",
+    ageRange: "Umur 5+",
     price: 30,
     marketplace: {
       shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
@@ -1810,7 +1855,7 @@ export const collectionProducts: CollectionProduct[] = [
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
-    ageRange: "Ages 5+",
+    ageRange: "Umur 5+",
     price: 30,
     marketplace: {
       shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
@@ -1869,6 +1914,18 @@ export const featuredProducts = collectionProducts.filter(
   (product) => product.featured,
 );
 
+// Homepage "Trending Right Now" — pulled from products flagged trending: true
+export const trendingProducts: TrendingProduct[] = collectionProducts
+  .filter((product) => product.trending)
+  .map((product) => ({
+    slug: product.slug,
+    name: product.name,
+    description: product.description,
+    price: product.marketplace.whatsapp.beforeDiscount,
+    discount: product.marketplace.whatsapp.afterDiscount,
+    image: product.image,
+  }));
+
 export const filterOptions = ["Usia", "Fokus Pembelajaran", "Warna"];
 export const sortOptions = [
   "Terbaru",
@@ -1881,7 +1938,7 @@ export const sortOptions = [
 export const productDetail = {
   slug: "master-architect-set",
   category: "Building Blocks",
-  ageRange: "Ages 3-8",
+  ageRange: "Umur 3-8",
   name: "Master Architect Set",
   rating: 4.9,
   reviewCount: 124,
@@ -2098,7 +2155,7 @@ const allProducts: Array<{
   rating?: number;
   reviewCount?: number;
   accordion?: AccordionItemData[];
-}> = [...collectionProducts, ...trendingProducts];
+}> = collectionProducts;
 
 export function getAllProductSlugs(): string[] {
   return allProducts.map((product) => product.slug);

@@ -44,6 +44,7 @@ export type CollectionProduct = {
   thumbnails?: string[];
   ribbon?: "New" | "Best Seller";
   featured?: boolean;
+  trending?: boolean;
   accordion?: AccordionItemData[];
 };
 
@@ -74,6 +75,7 @@ export type TrendingProduct = {
   name: string;
   description: string;
   price: number;
+  discount: number;
   image: string;
 };
 

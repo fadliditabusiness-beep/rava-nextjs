@@ -10,17 +10,18 @@ export default function ProductCategoriesSection() {
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="font-headline-lg text-headline-lg text-primary mb-2">
-              Shop by Category
+              Jelajahi Koleksi RAVA Toys
             </h2>
             <p className="text-on-surface-variant">
-              Find the perfect tool for their next adventure.
+              Temukan berbagai aktivitas edukatif yang dirancang untuk membantu
+              anak belajar, bermain, dan berkembang setiap hari.
             </p>
           </div>
           <Link
             href="/products"
             className="text-secondary font-bold flex items-center gap-2 group"
           >
-            View All
+            Lihat Semua
             <MaterialIcon
               name="arrow_forward"
               className="transition-transform group-hover:translate-x-2"

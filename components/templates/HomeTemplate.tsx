@@ -20,7 +20,7 @@ export default function HomeTemplate() {
         <ProductCategoriesSection />
         <FeaturedProductsSection />
         <TrendingCarousel />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <FinalCTASection />
       </main>
       <Footer />

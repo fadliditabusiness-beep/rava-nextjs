@@ -7,7 +7,7 @@ export default function WhyChooseSection() {
     <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low/30">
       <div className="max-w-container-max mx-auto">
         <SectionHeading
-          title="The RAVA Difference"
+          title="Kenapa Memilih RAVA Toys?"
           align="center"
           withRule
           className="mb-20"

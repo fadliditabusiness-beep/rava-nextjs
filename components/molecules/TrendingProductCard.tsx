@@ -7,8 +7,11 @@ export default function TrendingProductCard({
   name,
   description,
   price,
+  discount,
   image,
 }: TrendingProduct) {
+  const isDiscounted = discount < price;
+
   return (
     <Link
       href={`/products/${slug}`}
@@ -20,7 +23,16 @@ export default function TrendingProductCard({
       <div>
         <h4 className="font-headline-md text-primary mb-2">{name}</h4>
         <p className="text-sm text-on-surface-variant mb-4">{description}</p>
-        <p className="font-bold text-secondary text-lg">${price.toFixed(2)}</p>
+        <div className="flex items-center gap-2">
+          {isDiscounted && (
+            <span className="text-sm text-on-surface-variant line-through">
+              Rp{price.toLocaleString("id-ID")}
+            </span>
+          )}
+          <span className="font-bold text-secondary text-lg">
+            Rp{discount.toLocaleString("id-ID")}
+          </span>
+        </div>
       </div>
     </Link>
   );

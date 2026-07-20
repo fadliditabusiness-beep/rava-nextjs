@@ -14,22 +14,19 @@ export default function HeroSection() {
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
         <div className="z-10 text-center md:text-left">
           <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-caps text-label-caps mb-6">
-            NEW COLLECTION 2024
+            Learning Through Play
           </span>
           <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
             Explore <br className="hidden md:block" /> Through Play
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg mx-auto md:mx-0">
-            Nurturing curious minds with thoughtfully designed, sustainable
-            educational toys for children aged 2-8. Quality meets wonder in
-            every piece.
+            Membantu anak belajar melalui permainan yang menyenangkan. Rangkaian
+            sensory play, busy book, flashcard, dan aktivitas edukatif yang
+            dirancang untuk mendukung tumbuh kembang anak usia 2–8 tahun.
           </p>
           <div className="flex flex-col sm:flex-row gap-stack-md justify-center md:justify-start">
             <Button href="/products" variant="primary">
-              Shop Now
-            </Button>
-            <Button href="/products" variant="outline">
-              Browse Collection
+              Lihat Koleksi
             </Button>
           </div>
         </div>
@@ -46,13 +43,19 @@ export default function HeroSection() {
             />
           </div>
           <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-3xl shadow-xl animate-float">
-            <MaterialIcon name="toys" className="text-4xl text-on-tertiary-container" />
+            <MaterialIcon
+              name="toys"
+              className="text-4xl text-on-tertiary-container"
+            />
           </div>
           <div
             className="absolute top-10 -right-6 bg-surface-container-lowest p-6 rounded-full shadow-xl animate-float"
             style={{ animationDelay: "-3s" }}
           >
-            <MaterialIcon name="psychology" className="text-4xl text-secondary" />
+            <MaterialIcon
+              name="psychology"
+              className="text-4xl text-secondary"
+            />
           </div>
         </div>
       </div>
