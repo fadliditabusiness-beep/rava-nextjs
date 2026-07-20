@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MaterialIcon from "@/components/atoms/MaterialIcon";
-import { useCartStore } from "@/lib/store/cart-store";
-
-const SHIPPING_ESTIMATE = 15000;
-const TAX_RATE = 0.08;
+import { useCartStore, SHIPPING_ESTIMATE } from "@/lib/store/cart-store";
 
 function formatRupiah(value: number) {
   return `Rp${Math.round(value).toLocaleString("id-ID")}`;
@@ -68,8 +65,7 @@ export default function CartSection() {
     0,
   );
   const shipping = items.length > 0 ? SHIPPING_ESTIMATE : 0;
-  const tax = subtotal * TAX_RATE;
-  const grandTotal = subtotal + shipping + tax;
+  const grandTotal = subtotal + shipping;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
@@ -175,12 +171,6 @@ export default function CartSection() {
                 {formatRupiah(shipping)}
               </span>
             </div>
-            <div className="flex justify-between text-body-md">
-              <span className="text-on-surface-variant">Tax</span>
-              <span className="text-on-surface font-semibold">
-                {formatRupiah(tax)}
-              </span>
-            </div>
             <div className="h-px bg-outline-variant/30 my-2" />
             <div className="flex justify-between">
               <span className="font-headline-md text-headline-md text-primary">
@@ -192,15 +182,15 @@ export default function CartSection() {
             </div>
           </div>
           <div className="space-y-4">
-            <button
-              type="button"
+            <Link
+              href="/checkout"
               className="w-full bg-secondary text-on-secondary py-4 rounded-full font-bold bouncy-hover active-scale shadow-lg flex items-center justify-center gap-2"
             >
               <span>Proceed to Checkout</span>
               <MaterialIcon name="arrow_forward" />
-            </button>
+            </Link>
             <p className="text-center text-sm text-on-surface-variant">
-              Taxes and shipping calculated at checkout
+              Shipping calculated at checkout
             </p>
           </div>
           <div className="mt-8 pt-8 border-t border-outline-variant/30 grid grid-cols-2 gap-4">
