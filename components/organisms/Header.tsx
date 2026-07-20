@@ -1,7 +1,7 @@
-import Link from "next/link";
 // import AnnouncementBar from "@/components/molecules/AnnouncementBar";
 import NavMenu from "@/components/molecules/NavMenu";
 import Logo from "@/components/atoms/Logo";
+import CartButton from "@/components/molecules/CartButton";
 
 export default function Header() {
   return (
@@ -11,12 +11,7 @@ export default function Header() {
         <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
           <Logo size="sm" />
           <NavMenu />
-          <Link
-            href="/products"
-            className="bg-primary text-on-primary px-8 py-3 rounded-full font-bold bouncy-hover active-scale"
-          >
-            Shop Now
-          </Link>
+          <CartButton />
         </div>
       </nav>
     </>
