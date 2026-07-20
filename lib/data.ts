@@ -2106,5 +2106,16 @@ export function getProductBySlug(slug: string): ProductDetailData | null {
 }
 
 export function getRelatedProducts(excludeSlug: string): RelatedProduct[] {
-  return relatedProducts.filter((product) => product.slug !== excludeSlug);
+  const pool = collectionProducts.filter(
+    (product) => product.slug !== excludeSlug,
+  );
+  const shuffled = [...pool].sort(() => Math.random() - 0.5);
+
+  return shuffled.slice(0, 4).map((product) => ({
+    slug: product.slug,
+    category: product.category,
+    name: product.name,
+    price: product.price,
+    image: product.image,
+  }));
 }
