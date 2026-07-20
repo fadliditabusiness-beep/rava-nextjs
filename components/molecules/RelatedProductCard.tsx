@@ -7,6 +7,7 @@ export default function RelatedProductCard({
   category,
   name,
   price,
+  discount,
   image,
 }: RelatedProduct) {
   return (
@@ -27,7 +28,12 @@ export default function RelatedProductCard({
         {category}
       </span>
       <h4 className="text-headline-md font-headline-md text-primary">{name}</h4>
-      <p className="text-primary font-bold mt-2">${price.toFixed(2)}</p>
+      <p className="text-primary font-bold mt-2 line-through">
+        Rp {price.toLocaleString("id-ID")}
+      </p>
+      <p className="text-primary font-bold mt-2">
+        Rp {discount.toLocaleString("id-ID")}
+      </p>
     </Link>
   );
 }

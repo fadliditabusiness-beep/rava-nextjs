@@ -219,220 +219,6 @@ export const collectionHero = {
 
 export const collectionProducts: CollectionProduct[] = [
   {
-    slug: "nordic-stackers",
-    name: "Nordic Stackers",
-    category: "Mainan Sensorik",
-    description: "Tactile wooden rings for coordination.",
-    ageRange: "Ages 0-2",
-    price: 35,
-    marketplace: {
-      shopee: { beforeDiscount: 35000, afterDiscount: 35000 },
-      tokopedia: { beforeDiscount: 35000, afterDiscount: 31500 },
-      tiktokShop: { beforeDiscount: 35000, afterDiscount: 31500 },
-      whatsapp: { beforeDiscount: 35000, afterDiscount: 28000 },
-    },
-    rating: 5,
-    reviewCount: 48,
-    ribbon: "New",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBj7q4fTMTOBX4DkGyiQ9-4s3woEI-ysXioYxD1oFkQ0B-Z9gJTULqBpDihzAoVmePpvYX8ilo-db2rSbx_oiKc1yP5KaGYzs_RfFn9lst5qEXONoOBuxQFCPtCQMpTHyUP2EGcc7I9QLPhp1tP6JIhfi_fmf-wTRhsJhqwDaTPqWevZ7VwWFyuQSjGe4SStVFISScb9L9dGd9g8cOkZe7XYyQEUpvOuZYbtvuwnXWSe7bpPoZRKwKWPg",
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Cincin kayu bertekstur alami merangsang indera peraba sekaligus melatih kesabaran saat menyusun ukuran dari besar ke kecil.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Koordinasi Tangan-Mata: Melatih gerakan menyusun cincin dengan presisi.",
-          "Pengenalan Ukuran: Memahami konsep besar-kecil secara alami.",
-          "Konsentrasi: Membangun fokus lewat aktivitas berulang yang menenangkan.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content: "Terdiri dari 6 cincin kayu solid dengan alas dudukan kokoh.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Material: Kayu solid FSC-Certified. Diameter alas: 12cm. Finishing: pewarna berbasis air non-toxic.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Bebas BPA, bebas timbal, ujung membulat sempurna aman untuk digigit balita. Memenuhi standar EN71.",
-      },
-    ],
-  },
-  {
-    slug: "textured-cubes",
-    name: "Textured Cubes",
-    category: "Mainan Sensorik",
-    description: "Engraved surfaces for sensory play.",
-    ageRange: "Ages 3+",
-    price: 48,
-    marketplace: {
-      shopee: { beforeDiscount: 48000, afterDiscount: 48000 },
-      tokopedia: { beforeDiscount: 48000, afterDiscount: 43200 },
-      tiktokShop: { beforeDiscount: 48000, afterDiscount: 43200 },
-      whatsapp: { beforeDiscount: 48000, afterDiscount: 38400 },
-    },
-    rating: 4.5,
-    reviewCount: 124,
-    ribbon: "Best Seller",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA2xavnpb4NJmrWCTWYzCzRYDa4D1cdcQcutdTo3mjOBrV4VSj43uhjh4nA-6fQHHjcDojuS6OiRQLf7xpuZ9jlFeDtkAKmPnpMBVemYwDF6Nd2o8StcZeY9gO6s2N29AQYqF1tBmzxmbeWz7PP36A-iCH5Swq3EmLyZ3xly_A0FEgCnl6gwYouI1BZo97iRgluJw8Qhue8JBx2UQpurYhXGB5h1h64giV2ROc5MkjK8m4B1pWs9Nm9bQ",
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Permukaan berukir pada setiap sisi kubus mengundang eksplorasi sentuhan yang memperkaya sensitivitas peraba anak.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Stimulasi Sensorik: Setiap sisi punya tekstur berbeda untuk dieksplorasi.",
-          "Motorik Halus: Menggenggam dan menyusun kubus melatih kekuatan jari.",
-          "Kreativitas: Kubus bisa disusun bebas menjadi berbagai bentuk.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content: "8 kubus kayu bertekstur dengan ukuran genggam anak.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Material: Kayu beech solid. Ukuran per kubus: 4x4cm. Finishing: minyak linseed food-grade.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Non-toxic, bebas BPA dan timbal, sudah melewati uji EN71 dan ASTM F963.",
-      },
-    ],
-  },
-  {
-    slug: "organic-puzzle",
-    name: "Organic Puzzle",
-    category: "Mainan Sensorik",
-    description: "Cognitive logic through soft forms.",
-    ageRange: "Ages 3-5",
-    price: 40,
-    marketplace: {
-      shopee: { beforeDiscount: 40000, afterDiscount: 40000 },
-      tokopedia: { beforeDiscount: 40000, afterDiscount: 36000 },
-      tiktokShop: { beforeDiscount: 40000, afterDiscount: 36000 },
-      whatsapp: { beforeDiscount: 40000, afterDiscount: 32000 },
-    },
-    rating: 5,
-    reviewCount: 56,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAF7chNjnztnPDIRXpY8ZcoVZeEsgGs89FuaJl61WDwWan9AV07wlDf2_GAFpI_-BzDsNEEaDhhkr1liAlQdW6SCltmL8RchSNpWRyLzw70u-uz18NtV61bXW8eoPZKJeo99G7P_OPKFEvZvqE2izZ3aIxP3Kyc9BoMgeh4Z_41g1DzPIXBsSN97ybclYkyy7Y2NuC6LFRgio66f-KWbbttrsx0J8AmFMtjHyQX_tTdk6n7MvP9-mch6Q",
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Bentuk-bentuk organik yang lembut melatih logika kognitif anak lewat pemecahan pola tanpa sudut tajam.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Logika & Pemecahan Masalah: Mencocokkan bentuk ke slot yang sesuai.",
-          "Koordinasi Motorik: Mengambil dan meletakkan kepingan dengan presisi.",
-          "Pengenalan Bentuk: Mengenal variasi bentuk organik non-geometris.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content: "1 papan dasar kayu dengan 8 kepingan puzzle bentuk organik.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Material: Kayu solid dengan tepi membulat. Ukuran papan: 20x20cm.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Tanpa sudut tajam, cat non-toxic berbasis air, aman untuk usia 3 tahun ke atas.",
-      },
-    ],
-  },
-  {
-    slug: "tactile-sphere",
-    name: "Tactile Sphere",
-    category: "Flashcard",
-    description: "Gentle auditory and tactile feedback.",
-    ageRange: "Ages 0-2",
-    price: 22,
-    marketplace: {
-      shopee: { beforeDiscount: 22000, afterDiscount: 22000 },
-      tokopedia: { beforeDiscount: 22000, afterDiscount: 19800 },
-      tiktokShop: { beforeDiscount: 22000, afterDiscount: 19800 },
-      whatsapp: { beforeDiscount: 22000, afterDiscount: 17600 },
-    },
-    rating: 4,
-    reviewCount: 31,
-    ribbon: "New",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuATG1q9lMsJQx856GLACJHRCMuJQsq0wB9_Aav-ZszrBeKAxtE7dmpkcHZIPOoWQtvlte_29WEha69V2a5hQXnhRZ5TQJMwobCGhrNB5PUoLN1eYSI-lfaFerGPwdcNRHSzWz3ie0UQOdDPCIiRHN85NDwt50E2HC2j5aJg3sWl9gZtZwHRrUKyDyvo-k0rKW7yS2GqDLX2F2k2CB07xvw91jGnRIjcIBTcAocncTdBE0gB9FIuQv3a4w",
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Bola dengan tekstur lembut dan bunyi gemerincing halus memberi rangsangan sentuhan dan pendengaran sekaligus.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Stimulasi Sentuhan: Permukaan bertekstur untuk dieksplorasi bayi.",
-          "Stimulasi Pendengaran: Bunyi gemerincing lembut saat digulingkan.",
-          "Motorik Kasar: Melatih gerakan menggenggam dan menggulirkan bola.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content: "1 bola sensorik berdiameter genggam bayi.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content: "Material: Kayu/karet food-grade. Diameter: 8cm.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Bebas BPA dan ftalat, ukuran aman tanpa risiko tersedak untuk usia 0-2 tahun.",
-      },
-    ],
-  },
-  {
     slug: "color-by-number-part-1",
     name: "Color by Number Part 1",
     category: "Buku Mewarnai",
@@ -2217,32 +2003,32 @@ export const productAccordion = [
   },
 ];
 
-export const relatedProducts: RelatedProduct[] = [
-  {
-    slug: "nordic-rainbow",
-    category: "Toddler Classics",
-    name: "Nordic Rainbow",
-    price: 45,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCVWhuaTNzvOsm1-Uxge5hF6MvddcUjUOLPYYR60EsdqJHNGiyY5V93JL1FusMxXQf98H5wRNaORVJxRsgmkk-1WgfIAt3Dcew_Q9sNqE5-8vIr0hPzF-MPdUO9Smz9USJi2iM5SNAbTX70-C_wM3OjliPgp9rD4KFDYvAfhKZiTwishHy5TsmZT4LqHc7nMj5R-ZT_BeVA3Ix6ZNpIFTyiXeVNmSgw7oAdAVtAT-AKoKcP0ku-X_2AEA",
-  },
-  {
-    slug: "savanna-friends",
-    category: "Logic & Puzzles",
-    name: "Savanna Friends",
-    price: 38,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuASE5CUtOmbEQRrji62-Nl3ErYZ3l1ExoPjAFCNrzs67GDLGF_g9eRyxqT5rotb6w2sAvQOlcSka3qSxQi-mX_lTybgY98k1msyc7PNZzaSGjFprjLwHd6DSWnofNRYn7ppnvpxhu2FzuNK3eIaD3lv_ThycW-QLoD8K_BZVd3GXp_CJnv9tnzCQp-9WCNz9gNNbEAqdb8CC0nAdVK_7JpmMRV1M3lZ-Z6JhdgQly-VeuZIgdIDfqg1iw",
-  },
-  {
-    slug: "balance-pebbles",
-    category: "Sensory Play",
-    name: "Balance Pebbles",
-    price: 52,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDe-0v4s5_NgjE341FPAp0aQf2CIGgBSkbBgo3SF3Tuo9LCbYo2-_qcL3nWPnrrWlX8k7Dr--aMPA6Niz4VkIBAA1_esszHAyHdWHqg3nkVdBAiT3a0qZxtdkO3Mzj0XLoTcjSxjo_K0grZA0HfhpuzXaxsdN7XXV5HgsXpwxSN0mz7-9TDUBT_qY2BBwRxB97r7mn5Bl_EoZFFvcfCi3yRb4FdetQUwGFRw43PfpzRXoGJ6-2LQaQkaQ",
-  },
-];
+// export const relatedProducts: RelatedProduct[] = [
+//   {
+//     slug: "nordic-rainbow",
+//     category: "Toddler Classics",
+//     name: "Nordic Rainbow",
+//     price: 45,
+//     image:
+//       "https://lh3.googleusercontent.com/aida-public/AB6AXuCVWhuaTNzvOsm1-Uxge5hF6MvddcUjUOLPYYR60EsdqJHNGiyY5V93JL1FusMxXQf98H5wRNaORVJxRsgmkk-1WgfIAt3Dcew_Q9sNqE5-8vIr0hPzF-MPdUO9Smz9USJi2iM5SNAbTX70-C_wM3OjliPgp9rD4KFDYvAfhKZiTwishHy5TsmZT4LqHc7nMj5R-ZT_BeVA3Ix6ZNpIFTyiXeVNmSgw7oAdAVtAT-AKoKcP0ku-X_2AEA",
+//   },
+//   {
+//     slug: "savanna-friends",
+//     category: "Logic & Puzzles",
+//     name: "Savanna Friends",
+//     price: 38,
+//     image:
+//       "https://lh3.googleusercontent.com/aida-public/AB6AXuASE5CUtOmbEQRrji62-Nl3ErYZ3l1ExoPjAFCNrzs67GDLGF_g9eRyxqT5rotb6w2sAvQOlcSka3qSxQi-mX_lTybgY98k1msyc7PNZzaSGjFprjLwHd6DSWnofNRYn7ppnvpxhu2FzuNK3eIaD3lv_ThycW-QLoD8K_BZVd3GXp_CJnv9tnzCQp-9WCNz9gNNbEAqdb8CC0nAdVK_7JpmMRV1M3lZ-Z6JhdgQly-VeuZIgdIDfqg1iw",
+//   },
+//   {
+//     slug: "balance-pebbles",
+//     category: "Sensory Play",
+//     name: "Balance Pebbles",
+//     price: 52,
+//     image:
+//       "https://lh3.googleusercontent.com/aida-public/AB6AXuDe-0v4s5_NgjE341FPAp0aQf2CIGgBSkbBgo3SF3Tuo9LCbYo2-_qcL3nWPnrrWlX8k7Dr--aMPA6Niz4VkIBAA1_esszHAyHdWHqg3nkVdBAiT3a0qZxtdkO3Mzj0XLoTcjSxjo_K0grZA0HfhpuzXaxsdN7XXV5HgsXpwxSN0mz7-9TDUBT_qY2BBwRxB97r7mn5Bl_EoZFFvcfCi3yRb4FdetQUwGFRw43PfpzRXoGJ6-2LQaQkaQ",
+//   },
+// ];
 
 export const ratingBreakdown = [
   { stars: 5, percent: 92 },
@@ -2308,7 +2094,7 @@ const allProducts: Array<{
   rating?: number;
   reviewCount?: number;
   accordion?: AccordionItemData[];
-}> = [...collectionProducts, ...trendingProducts, ...relatedProducts];
+}> = [...collectionProducts, ...trendingProducts];
 
 export function getAllProductSlugs(): string[] {
   return allProducts.map((product) => product.slug);
@@ -2346,7 +2132,8 @@ export function getRelatedProducts(excludeSlug: string): RelatedProduct[] {
     slug: product.slug,
     category: product.category,
     name: product.name,
-    price: product.price,
+    price: product.marketplace.whatsapp.beforeDiscount,
+    discount: product.marketplace.whatsapp.afterDiscount,
     image: product.image,
   }));
 }

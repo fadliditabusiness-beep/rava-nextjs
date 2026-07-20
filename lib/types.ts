@@ -94,6 +94,7 @@ export type RelatedProduct = {
   category: string;
   name: string;
   price: number;
+  discount: number;
   image: string;
 };
 
