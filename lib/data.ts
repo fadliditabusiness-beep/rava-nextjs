@@ -1,506 +1,3 @@
-// import type {
-//   Category,
-//   CollectionProduct,
-//   Product,
-//   Feature,
-//   Testimonial,
-//   TrendingProduct,
-//   FaqItem,
-//   Review,
-//   RelatedProduct,
-//   ProductDetailData,
-//   Marketplace,
-// } from "./types";
-
-// export const siteConfig = {
-//   name: "RAVA",
-//   tagline: "Playful Sophistication",
-//   logo: "https://lh3.googleusercontent.com/aida/AP1WRLvCZaU1qA7H0KznEKjxixpBUM_Vz-ZcwKVk7Z7fz-K-bLyf_ayiESaeNVhL2sRKN5ZULLnmCHkX3p9hZUDNfmyRPYfs3MZOTKEL7XFj_CuuTB5BweCEEMZ4vacRlOcT5lSGybt8Tj4rECZ-GqQau13HWUOyIKoOlA3z6rigtRDyJjjtKe9stMqwASJGtuWZWb88fPH3bySjRv_T-BXMglYQpOTJW5Az69wxnR76Blwirl2vcoHuiup-LfdP",
-//   announcements: [
-//     "Free Shipping | New Collection | Best Seller",
-//     "Safe Materials | Eco Friendly | Certified Toys",
-//     "New Coding Kits Just Arrived | Limited Stock",
-//   ],
-// };
-
-// export const navLinks = [
-//   { label: "Home", href: "/" },
-//   { label: "Collections", href: "/products" },
-//   { label: "Products", href: "/products" },
-//   { label: "Reviews", href: "/#reviews" },
-//   { label: "FAQ", href: "/#faq" },
-//   { label: "Contact", href: "/#contact" },
-// ];
-
-// export const heroImage =
-//   "https://lh3.googleusercontent.com/aida-public/AB6AXuA3z8s_JKbQpjxyUHKkNEV-rd-wiGDlyPB2DEhbmHDOUxjNbATv5-2kjXPRb7bzTV609CZeKehawenqADpQ0BdhJf1bRqBs7tHUCTMX2MsjBMdUQfUen1vIDOdpfnNtNG_mnuh4gKRpOtnXE2vB8iuL0ES7CvYGlZarNOCLD4TvVA-NwhgNDxCaRLRsWPF1VrLRbI2wQrNf5PjoyIBnmtUMsS5RzYiFbeOUh_DsFhdY50opyj2IvnyVWA";
-
-// export const trustStats = [
-//   { value: "10k+", label: "Happy Kids", color: "text-primary" },
-//   { value: "500+", label: "5-Star Reviews", color: "text-secondary" },
-//   { value: "100%", label: "Safe Materials", color: "text-on-tertiary-container" },
-//   { value: "Fast", label: "Global Shipping", color: "text-primary" },
-// ];
-
-// export const features: Feature[] = [
-//   {
-//     icon: "verified_user",
-//     title: "Certified Safe",
-//     description: "Non-toxic, sustainable wood and BPA-free materials only.",
-//     iconBg: "bg-primary-fixed",
-//     iconColor: "text-primary",
-//   },
-//   {
-//     icon: "school",
-//     title: "Educational Focus",
-//     description: "Curriculum-inspired designs that spark meaningful growth.",
-//     iconBg: "bg-secondary-container",
-//     iconColor: "text-secondary",
-//   },
-//   {
-//     icon: "fitness_center",
-//     title: "Motor Skills",
-//     description: "Improving hand-eye coordination through tactile interaction.",
-//     iconBg: "bg-tertiary-fixed",
-//     iconColor: "text-on-tertiary-container",
-//   },
-//   {
-//     icon: "palette",
-//     title: "Pure Creativity",
-//     description: "Open-ended play that lets their imagination run wild.",
-//     iconBg: "bg-primary-fixed",
-//     iconColor: "text-primary",
-//   },
-//   {
-//     icon: "phonelink_off",
-//     title: "Screen-Free",
-//     description: "Real-world engagement that replaces digital distractions.",
-//     iconBg: "bg-secondary-container",
-//     iconColor: "text-secondary",
-//   },
-//   {
-//     icon: "child_care",
-//     title: "Playful Learning",
-//     description: "Because every moment is a chance to learn something new.",
-//     iconBg: "bg-tertiary-fixed",
-//     iconColor: "text-on-tertiary-container",
-//   },
-// ];
-
-// export const categories: Category[] = [
-//   {
-//     name: "Sensory Toys",
-//     gradient: "from-primary/60",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ0MrmrW__k1FQXWvxYjYcgqT1_ZPrhq-Yyowr8op5oLe0HgpzBgdoE19T4mDlIiCdNl4IFRe9Nooo1phbhx4WSSfLkaWVyMUqXct_7BIEJKZKl18hKGv4jrVSp69rXj0so7Bnn1u6fKieSZjUPL7ulnCvLBPubzKxfmPbmJcT69tK-iCUbFKAb5snmixKzPz53z5Kcut9BOrXHgT84bo_ml45tFfiKvOtJ_c-hio94lqslt5LfrHXlw",
-//   },
-//   {
-//     name: "DIY Kits",
-//     gradient: "from-secondary/60",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuC-b0b77BEUa-GR-MP4ZjZ-3PlYObcVqU34w1KGez6rVBJvUkfbiag9cvM9D4zB81xGx_6wZpgqeAypHTWWp4EX7WDtNTcAnrlTgxuQbb651aw_ra9W-9o4XtO-GoZ7by_Z8-cc87qSfxEnUcEjYK7Wn8rn4SKvtFm143m4UU9sg_wkmdXP9UQuHiCOIFUtorcspckR6t4k2yyxNJrRA95w1W1-uscb3XdAM9y654Wo0P05yxhMM9xFrQ",
-//   },
-//   {
-//     name: "Flash Cards",
-//     gradient: "from-on-tertiary-container/60",
-//     span: true,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuA9_McLsQ8R7arI3j6LpUE1g88_Cc74h1GMFo_llgdw1Ww9c0FS-C0ZsWryUwrvrOos-4vOzfrGuGcM02FhLV0ADcvRbVl9ldlwDpmJ7ID5dJinudizOyQEqTL5FyjieUiD96W7DH0fWe8IKgnJeMgxi2rdF0nXO5USCmHZ10eN-EJI2yARgm6RQyZZRk8vUzjuMKEDEIA8xXHMS4WV5oRD7DZ_M8mAkc2dNu7aXl85x9tvY1jlZtZYgA",
-//   },
-//   {
-//     name: "Coloring Books",
-//     gradient: "from-primary-container/60",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuCZeGEVAjWurooVqGwSrH7ScJnvxKLn0UiYoLw--JUK2bL-RVOyARZWCrfWjkyvvhXRP_Q9sg5_NMreJxS7rZF3FNDwo4TlXfLr_XoCNn3ubcq9OY4JN1eSUSO-126pH-st9iVknW2GAivINhX7BMCtvdWA_KlQgYdOlFS15b0rpYJw63UcBD_AR6wN7v60q5P9ofQhBromZPxwvqIIF8_nxaebYh5bCdgc2aZ0AiY1jxkJoRCKH7x8Wg",
-//   },
-//   {
-//     name: "Coding Books",
-//     gradient: "from-secondary-fixed/60",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuAolV-PMKthmEtNxWknWeyTaxpnnDn7_8lMss39PE6xbJKbrfJb7MIULn4meTObR_yqt7oTFj6upHwUvzfD9duiYMh1cFjw623NMOWAHA_4O8PGPPsf1tLzvR1W7ELPH7J8mfk1uWisrYJb6KWsoXwadlkWd6RV_lhhbcMHaxfAQslGo16Gr1ki4gw7vLw8KrpSy0tw8z3AIXuL7R3V31MO4ii2OSRbElGvMbpArSDD4wLPk3KGJ6ELwA",
-//   },
-//   {
-//     name: "Activity Books",
-//     gradient: "from-primary/60",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuC8cYRzFlIreX3NEACTx8_1Dk_kzkP_fG1JQauvU2B9OMS24Lj2nrIjROgje8sX3UaMECkXm0LGkCdRPB-XQXQA4OPSfuJuq_sM24mfpIFxZHaPK5nYpouXTnXYBZ7NsfZQt7Yx_Tk3ne27SNfEBBLn448Qz0cH_ErnK78_Tg6xc97SoQTso9JqHQxS2jcW9HTa-A8gIVBr2KYva6m1GGT5DBvPyVuVihVnBMpNSSuGEmaX4LW6UQe4Cw",
-//   },
-//   {
-//     name: "Printables",
-//     gradient: "from-secondary/60",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuDkZwpmSlHM85IBg8-CB6dvQa10XIFKFuEdCNlXFz-j0ydnF01Zi2VfBnVVcxgqYEymGUfWnc5Sk5bBuAbBPUTADf1kYz3kjbmd98_L96ogfX0K_Ts0C8MLTOo-rm1Yj8JOSP1So3e04Tjpu2-9yw1ptlvty68OWqrc3-ufqH9iV8CVnYqpro02_RU3jQdwyn-IGsrNrK-Sl0YihUNmjjtvfPk6EkcfcsKPWqHkGdrlEYbhtojGvXRAnw",
-//   },
-// ];
-
-// // Featured products on the homepage — also drives the product detail routes
-// export const featuredProducts: Product[] = [
-//   {
-//     slug: "master-architect-set",
-//     name: "Master Architect Set",
-//     category: "Building Blocks",
-//     ageRange: "Age 3+",
-//     description:
-//       "Enhance spatial awareness and motor skills through open-ended play.",
-//     price: 68,
-//     rating: 5,
-//     reviewCount: 124,
-//     badge: "BEST SELLER",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuCAIec9qcX9b8XNTQJfyvXaQj7SvISqsaKPD1KoA_sO5aZAciEWoIyQM9vuXD9KUxzfm4rUGOgjzAlkIwlRTpP6D25jiTUiZTZ-1lQpRK9OlZaCfIlHy_rP9cyIvRThzfRYSsZkHOFEJXIEahY4hzC1EcOd63mEtl3Jm2RN-_DX2sAEA8T2RMAeQIbgFsSA2Pzt79yq9C4tDkKMBjMIMXVUAM2rw00FR49hiK6gPZ16K5nTXh1bGJDPag",
-//   },
-//   {
-//     slug: "quantum-counting-board",
-//     name: "Quantum Counting Board",
-//     category: "Mathematics",
-//     ageRange: "Age 4+",
-//     description:
-//       "A tactile introduction to foundational math concepts and logic.",
-//     price: 42,
-//     rating: 4.5,
-//     reviewCount: 89,
-//     badge: "NEW",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuDIisBqw8xuGmOPCIKalmkgRI6xOo4aipC3muzplVnPilD0K7aagrnzI0sOcHosBrJZvns6h0vtTyyXm87v5Mk8TFhAaqAhvPkdx2LHS1fHJ96utEPuPhU4jdrq7AUotfAf9_-npPn9eizTv7Efjv9yCTjXeUsrFjwzkTqMj8JL15AUC03hK5NPQTLQJ7rGGEkbo3BKOGoHMtpIAOT8YAloUq7AKXYtPdCWjH-6Yw-Xlue3PGQU1eIAug",
-//   },
-//   {
-//     slug: "animal-abc-cards",
-//     name: "Animal ABC Cards",
-//     category: "Literacy",
-//     ageRange: "Age 2+",
-//     description:
-//       "Oversized cards with vibrant animal illustrations for early reading.",
-//     price: 24,
-//     rating: 5,
-//     reviewCount: 210,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuAITRPrjxN3Rnk1n-pFyIQhs-W9kwS_dbuflf9z-tmRx9_4XNwhsTUA-14xDaQkSBNLzVuayhN5sM-UlhYjygNv2MQc_OcDYwcIJKnp0NtWTZb50oe3PnWpAg43nMAAg7nM--4XMi3Ruk96Bbo0fbjGFTol2RdzLZgcRFDx69tHMmpinEtRl7kj0GrE4W7Pwxh3V1DvCOw_RUVMM8ppouzjqEU_TpLZwuHBgMZajQGgSYGMfp9hOApWqA",
-//   },
-// ];
-
-// export const trendingProducts: TrendingProduct[] = [
-//   {
-//     slug: "bot-1-explorer",
-//     name: "Bot-1 Explorer",
-//     description: "First steps into coding logic.",
-//     price: 45,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuA718x4eBIsaeKqWH1qT1iJNI-aD2Zu3sIkPIjPH8PV2ppB_nCnjO54lub_FvnqTJASvE5io7oFFDPpfOw3XbCSVr2laO3XbwJlhtVTbMYQ_jndtbCeO8Inv-JKI8PBj2dGVSq6X63oV9ZwRWbtD3P9gSri3VmssuVNkarRHWkEPQSjZW-zh5iOuRZgnYtOM7WtgDfGLM6P5E9Dw23cT9Aumgro72lc9tXvYWhy_35YzlDuA3L2l5DKYw",
-//   },
-//   {
-//     slug: "light-prisms",
-//     name: "Light Prisms",
-//     description: "Discover the magic of physics.",
-//     price: 28,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuDtMQsaryy5ofJbr26yaMTA6fMSoyyjmjOuH0YdPYHPdCFo_FcUBQgYhKCYxMwvLL754L7L6o-Wg97u7PBji7AiUZznE5_bz9H-25w4OlB1K5h_juq63Ax3fcxLH7E0WULYqv0OSwLJ_y0yryBq7aLEYoKYmcTyEVeVcMygBfZv15oOHyfMvdcdTxKGq8PpPGxpoAZKVWJ0Asf2d9HEXDVD2eqpBiu-FyN316NulwLM-k9OAldgoLA1sw",
-//   },
-//   {
-//     slug: "grow-with-me-kit",
-//     name: "Grow-With-Me Kit",
-//     description: "Garden and nature exploration.",
-//     price: 32,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuCGa6U0fDaecpuaWu1efxg1xJdSx4GxcecaA1VmUIdnNPDEC58oCWB5nOkK5IW1l4mzw76Orxwi5e8c7Wq-ki2y26kwDcJewbHSf4Cc07ybXXFHp3LI4IAMhxxUzSVDAX0V5vhULQk68PhoSt16BKH8wEcF3vj1vsETX6szMQ0YYi79Gj58HDKfeOKz8MCKtsmva34sY-e0s4PqnGikyixrHxZMeFVfIqSiTlq5orLTUfFJJL8upLgvXQ",
-//   },
-// ];
-
-// export const testimonials: Testimonial[] = [
-//   {
-//     name: "Sarah Jenkins",
-//     location: "London, UK • Son aged 4",
-//     quote:
-//       "The quality of the wooden blocks is exceptional. My 4-year-old hasn't stopped building 'dream cities' since we opened the box. Truly premium.",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuDITWRcYmYexmIz3t4xZ18W-eDUP-95Qckl3Idp0geb135mLMQg9z2Kw0uAQSjkGTJfGlfZKt3JrPKDlTQgtqrbbREWqMOl1zF0zc0uF79fmVmi9O3-PuTdaoPuY7xegqIA8H-ApD2C7ZhJwgM8683eobeDpOGeY--A55F4PeVx2KHIt3jieocO8LHJ8MObtPTeyDRqEOFX_CvhCyye1dGYyk8sB8rG9u2vVfJjckrWQcu5aOWWPgApwg",
-//   },
-//   {
-//     name: "Mark Thompson",
-//     location: "Sydney, AU • Daughter aged 3",
-//     quote:
-//       "RAVA is our go-to for birthday gifts. The educational value is clear immediately, and they look beautiful on the shelf too!",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuClvsX70x7XMl6D76PDrHNq9XwvjlfvMZTTJgaohX1-fV-FIpWnoV1Cg6q-z4An5r8f-0af7WfC9MCRQdQXqzJeTaxPqMg9SN-F87SXknoPJb5u8lPFLuVzG6BaRLdx50HwGJV5n4DxLCy7bdBnI2jbeLVNT_eXkShBQqqc7wY104FFIogLLETVdEHGKahaWgTzbhlrJWRuQAvUgF2nWToUZG7UrT-qpXmqDkX2lRy1lqpBLxn3l01MfA",
-//   },
-//   {
-//     name: "Dr. Elena Rossi",
-//     location: "Milan, IT • Educator",
-//     quote:
-//       "Finally, toys that aren't over-stimulating. My students love the sensory board. It keeps them focused and calm.",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuCuHO6dfFDx0LQ9Dlu0unUBO7mSo-wmBl0b4vfK1I7yoL-Eqblorzti64T-80XbbcevgF_KfJvrp9XJashMnBv34VEDaeFT-SIvJ0yeWps_2TEv8vNuvkni0dki2TFCwGdhPcy5-Qz35K2eLHjFHi7zG9qKX9H6_jgTPtxLbpJEkrg1sZPbjFrj60dWW-ZN6ZU4j4Rh0yVgeMXQEn8q5Pgu444uHqHSp8tuyR2HAO7-UFN1tqUKXms3Fg",
-//   },
-// ];
-
-// // Product Listing (Collections) page — "Sensory Toys" category
-// export const collectionHero = {
-//   breadcrumb: ["Home", "Collections", "Sensory Toys"],
-//   title: "Sensory Toys",
-//   description:
-//     "Curated tools designed to stimulate curiosity and develop fine motor skills through tactile exploration. Our Scandinavian-inspired designs focus on organic textures and calming palettes.",
-// };
-
-// export const collectionProducts: CollectionProduct[] = [
-//   {
-//     slug: "nordic-stackers",
-//     name: "Nordic Stackers",
-//     description: "Tactile wooden rings for coordination.",
-//     ageRange: "Ages 0-2",
-//     price: 35,
-//     rating: 5,
-//     reviewCount: 48,
-//     ribbon: "New",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuBj7q4fTMTOBX4DkGyiQ9-4s3woEI-ysXioYxD1oFkQ0B-Z9gJTULqBpDihzAoVmePpvYX8ilo-db2rSbx_oiKc1yP5KaGYzs_RfFn9lst5qEXONoOBuxQFCPtCQMpTHyUP2EGcc7I9QLPhp1tP6JIhfi_fmf-wTRhsJhqwDaTPqWevZ7VwWFyuQSjGe4SStVFISScb9L9dGd9g8cOkZe7XYyQEUpvOuZYbtvuwnXWSe7bpPoZRKwKWPg",
-//   },
-//   {
-//     slug: "textured-cubes",
-//     name: "Textured Cubes",
-//     description: "Engraved surfaces for sensory play.",
-//     ageRange: "Ages 3+",
-//     price: 48,
-//     rating: 4.5,
-//     reviewCount: 124,
-//     ribbon: "Best Seller",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuA2xavnpb4NJmrWCTWYzCzRYDa4D1cdcQcutdTo3mjOBrV4VSj43uhjh4nA-6fQHHjcDojuS6OiRQLf7xpuZ9jlFeDtkAKmPnpMBVemYwDF6Nd2o8StcZeY9gO6s2N29AQYqF1tBmzxmbeWz7PP36A-iCH5Swq3EmLyZ3xly_A0FEgCnl6gwYouI1BZo97iRgluJw8Qhue8JBx2UQpurYhXGB5h1h64giV2ROc5MkjK8m4B1pWs9Nm9bQ",
-//   },
-//   {
-//     slug: "organic-puzzle",
-//     name: "Organic Puzzle",
-//     description: "Cognitive logic through soft forms.",
-//     ageRange: "Ages 3-5",
-//     price: 40,
-//     rating: 5,
-//     reviewCount: 56,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuAF7chNjnztnPDIRXpY8ZcoVZeEsgGs89FuaJl61WDwWan9AV07wlDf2_GAFpI_-BzDsNEEaDhhkr1liAlQdW6SCltmL8RchSNpWRyLzw70u-uz18NtV61bXW8eoPZKJeo99G7P_OPKFEvZvqE2izZ3aIxP3Kyc9BoMgeh4Z_41g1DzPIXBsSN97ybclYkyy7Y2NuC6LFRgio66f-KWbbttrsx0J8AmFMtjHyQX_tTdk6n7MvP9-mch6Q",
-//   },
-//   {
-//     slug: "tactile-sphere",
-//     name: "Tactile Sphere",
-//     description: "Gentle auditory and tactile feedback.",
-//     ageRange: "Ages 0-2",
-//     price: 22,
-//     rating: 4,
-//     reviewCount: 31,
-//     ribbon: "New",
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuATG1q9lMsJQx856GLACJHRCMuJQsq0wB9_Aav-ZszrBeKAxtE7dmpkcHZIPOoWQtvlte_29WEha69V2a5hQXnhRZ5TQJMwobCGhrNB5PUoLN1eYSI-lfaFerGPwdcNRHSzWz3ie0UQOdDPCIiRHN85NDwt50E2HC2j5aJg3sWl9gZtZwHRrUKyDyvo-k0rKW7yS2GqDLX2F2k2CB07xvw91jGnRIjcIBTcAocncTdBE0gB9FIuQv3a4w",
-//   },
-// ];
-
-// export const filterOptions = ["Age Range", "Skill Focus", "Color Palette"];
-// export const sortOptions = [
-//   "Newest",
-//   "Popularity",
-//   "Price: Low to High",
-//   "Price: High to Low",
-// ];
-
-// // Product Detail page — "Master Architect Set"
-// export const productDetail = {
-//   slug: "master-architect-set",
-//   category: "Building Blocks",
-//   ageRange: "Ages 3-8",
-//   name: "Master Architect Set",
-//   rating: 4.9,
-//   reviewCount: 124,
-//   description:
-//     "Elevate playtime with a masterclass in open-ended exploration. Inspired by Scandinavian minimalism, these 100 precision-cut beechwood blocks invite your little architect to build without boundaries.",
-//   heroImage:
-//     "https://lh3.googleusercontent.com/aida/AP1WRLvLEF-QT2J8R4Im0uOTTpivOzjYOdC7NzFiPG_eMvEFdsArkt_UamxYJTB5oWHKv3VNnrz_jY2LD6EWmcslcu6Y-cjwNnQL5qr2IrQcMMEUU7gaVF1_0UoqnA9wO33J6xoKeZt8YuDGmVBeY5uh2s6rB_UMIU_ko2_kdsXZFOH8e9XOWyrLui8Duk44NM5oNPue2jm-_UduPFet1riWrdtRcY3m3UvT_Ni9bAAs3MrrDRlci4r0zc7HEww",
-//   thumbnails: [
-//     "https://lh3.googleusercontent.com/aida-public/AB6AXuATY9ngp5q90KJHLWMbXCDCx_-Scq25jV28SVoGStKl1WScXQyZ5TACt-Zn7evaQ8ryhHCqcddHQBkxEq2YMpFg2hm5UNJuSMuFnUC3LjwnKpwiZEFV_TNf_hbFemBoCzDAUxdF1tWBx8umns_u-NI7As0DhvDfDT076lr8lbhpomELp9cMjYZoJKPs09WjlgCxcKwFDkbWvhjeso0Kka7o8mJYUjbLfuR7YaoKKA-fRVkqxCkC1jVZpg",
-//     "https://lh3.googleusercontent.com/aida-public/AB6AXuDaSb2pxXaqR1innGbk5Zr5vk6TCurno5T-CjxIPGldfJkmKVEBnVVJiElNyRI4F_GpkZqYtobzU4RyaKYVO-CrgaD-s20e6Gt6HYSAgoeRBYSfMiyBxntRkqhzMZGyR3ZbaRCBieZPGNRqCCgfqmBa1wxifu7NE5tiKrn3OCXlSqPdI4YiwytS9WGC_V-JBfpshavmIcFxH3LSXpQun8OiCp9Vglr0HyDi1LhHna3Szq8W1Ac_o-0yQg",
-//     "https://lh3.googleusercontent.com/aida-public/AB6AXuAOTyztsoXPCjF1oSLaE20qBXQgVRoCOx-ZjA2JS3Sj8O3l-Jm01mAQNp7n92Q-PVs9Rhn_Ss2Z0ZzD69ndGW7WGp9dmwq9jcc0drI4DKlFKzIgBtUsFjdwvVcJiRV-i1JZcvdjzONchmQdDQGcg8hXI503kzaX4J8gzBjKlnvZ12CI6rdlY15F6JTogK_4MaJQxAFxCevXp2kD_lFTg2wZ_L9e0eOaEF2OWal3C-r_GChxJVpNL21Aqw",
-//     "https://lh3.googleusercontent.com/aida-public/AB6AXuBgf8HfM7JDLjPmHPeythjqaFkbOGHFmvfV0W_cQ3A2taID_uewEQhO19w4PmbwFdXadUJIiS9yo-7_w9Qj94ZmV7wR7CqbQkp6m5Cpo9FGNcCOcyh6a3QtQLfwe6JnhJ8X05MGPn84vXiy6dFSm6llRdBeKmbWJ0YoOm6IwqeSF8NEfJsIVZ4c-kGhhpFsfMZlXS-TUePoj-b_yWLMb_WDyLUGi9NqidGJ3L1nktVpBOKh-rl_lrVgeQ",
-//   ],
-// };
-
-// // Marketplace branding is shared across every product; each platform sells
-// // at its own share of that product's own price, so prices differ per
-// // product instead of a single fixed amount for every page.
-// const marketplacePlatforms: Array<Omit<Marketplace, "price">> = [
-//   { name: "Shopee", color: "#EE4D2D", hoverColor: "#d43f21", icon: "arrow_forward" },
-//   { name: "Tokopedia", color: "#03AC0E", hoverColor: "#028b0b", icon: "arrow_forward" },
-//   { name: "TikTok Shop", color: "#000000", hoverColor: "#111111", icon: "arrow_forward" },
-//   { name: "Order via WhatsApp", color: "#25D366", hoverColor: "#1da851", icon: "chat" },
-// ];
-// const marketplacePriceShare = [1, 0.9, 0.9, 0.8];
-
-// function buildMarketplaces(basePrice: number): Marketplace[] {
-//   return marketplacePlatforms.map((platform, i) => ({
-//     ...platform,
-//     price: Math.round(basePrice * marketplacePriceShare[i] * 1000),
-//   }));
-// }
-
-// export const productAccordion = [
-//   {
-//     icon: "eco",
-//     title: "Benefits",
-//     defaultOpen: true,
-//     content:
-//       "Crafted for durability and tactile pleasure, our blocks encourage screen-free play. They foster patience, concentration, and a deep appreciation for geometric harmony.",
-//   },
-//   {
-//     icon: "psychology",
-//     title: "Learning Outcomes",
-//     defaultOpen: false,
-//     content: [
-//       "Motor Skills: Refining fine motor control through careful stacking and balancing.",
-//       "Spatial Awareness: Visualizing structures in 3D and understanding structural integrity.",
-//       "Creativity: Transforming abstract shapes into castles, cities, or animals.",
-//     ],
-//   },
-//   {
-//     icon: "inventory_2",
-//     title: "What's Included",
-//     defaultOpen: false,
-//     content:
-//       "Includes 100 blocks in 14 unique shapes: cubes, rectangular prisms, triangles, cylinders, and arches. Comes with a high-quality cotton drawstring storage bag for easy cleanup.",
-//   },
-//   {
-//     icon: "architecture",
-//     title: "Specifications",
-//     defaultOpen: false,
-//     content:
-//       "Material: FSC-Certified Solid Beechwood. Weight: 3.5kg. Finishing: Food-grade linseed oil and water-based tints.",
-//   },
-//   {
-//     icon: "verified_user",
-//     title: "Safety Information",
-//     defaultOpen: false,
-//     content:
-//       "Safety is our priority. All pieces are BPA-free, lead-free, and painted with non-toxic water-based stains. Exceeds EN71 and ASTM F963 international safety standards.",
-//   },
-// ];
-
-// export const relatedProducts: RelatedProduct[] = [
-//   {
-//     slug: "nordic-rainbow",
-//     category: "Toddler Classics",
-//     name: "Nordic Rainbow",
-//     price: 45,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuCVWhuaTNzvOsm1-Uxge5hF6MvddcUjUOLPYYR60EsdqJHNGiyY5V93JL1FusMxXQf98H5wRNaORVJxRsgmkk-1WgfIAt3Dcew_Q9sNqE5-8vIr0hPzF-MPdUO9Smz9USJi2iM5SNAbTX70-C_wM3OjliPgp9rD4KFDYvAfhKZiTwishHy5TsmZT4LqHc7nMj5R-ZT_BeVA3Ix6ZNpIFTyiXeVNmSgw7oAdAVtAT-AKoKcP0ku-X_2AEA",
-//   },
-//   {
-//     slug: "savanna-friends",
-//     category: "Logic & Puzzles",
-//     name: "Savanna Friends",
-//     price: 38,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuASE5CUtOmbEQRrji62-Nl3ErYZ3l1ExoPjAFCNrzs67GDLGF_g9eRyxqT5rotb6w2sAvQOlcSka3qSxQi-mX_lTybgY98k1msyc7PNZzaSGjFprjLwHd6DSWnofNRYn7ppnvpxhu2FzuNK3eIaD3lv_ThycW-QLoD8K_BZVd3GXp_CJnv9tnzCQp-9WCNz9gNNbEAqdb8CC0nAdVK_7JpmMRV1M3lZ-Z6JhdgQly-VeuZIgdIDfqg1iw",
-//   },
-//   {
-//     slug: "balance-pebbles",
-//     category: "Sensory Play",
-//     name: "Balance Pebbles",
-//     price: 52,
-//     image:
-//       "https://lh3.googleusercontent.com/aida-public/AB6AXuDe-0v4s5_NgjE341FPAp0aQf2CIGgBSkbBgo3SF3Tuo9LCbYo2-_qcL3nWPnrrWlX8k7Dr--aMPA6Niz4VkIBAA1_esszHAyHdWHqg3nkVdBAiT3a0qZxtdkO3Mzj0XLoTcjSxjo_K0grZA0HfhpuzXaxsdN7XXV5HgsXpwxSN0mz7-9TDUBT_qY2BBwRxB97r7mn5Bl_EoZFFvcfCi3yRb4FdetQUwGFRw43PfpzRXoGJ6-2LQaQkaQ",
-//   },
-// ];
-
-// export const ratingBreakdown = [
-//   { stars: 5, percent: 92 },
-//   { stars: 4, percent: 6 },
-//   { stars: 3, percent: 2 },
-// ];
-
-// export const productReviews: Review[] = [
-//   {
-//     name: "Sarah M.",
-//     rating: 5,
-//     timeAgo: "2 weeks ago",
-//     quote:
-//       "The quality of the wood is exceptional. Unlike cheaper blocks, these have a weight and texture that feels truly premium. My 4-year-old hasn't stopped building 'castles' for days.",
-//   },
-//   {
-//     name: "David L.",
-//     rating: 5,
-//     timeAgo: "1 month ago",
-//     quote:
-//       "As an architect myself, I appreciate the precision of these cuts. They balance perfectly. It's beautiful enough to leave out on the coffee table!",
-//   },
-//   {
-//     name: "Elena R.",
-//     rating: 4,
-//     timeAgo: "2 months ago",
-//     quote:
-//       "Love the sustainability aspect. The storage bag is a nice touch too. Only wish they came in even bigger sets!",
-//   },
-// ];
-
-// export const productFaqs: FaqItem[] = [
-//   {
-//     question: "How do I clean the wooden blocks?",
-//     answer:
-//       "Simply wipe with a slightly damp, lint-free cloth. Avoid soaking in water or using harsh detergents, as this can raise the wood grain or damage the non-toxic finish. For a deeper clean, a mild solution of water and white vinegar can be used.",
-//   },
-//   {
-//     question: "Are the paints safe if my child chews on them?",
-//     answer:
-//       "Yes! We use only water-based, non-toxic tints and food-grade linseed oil. Our products are rigorously tested and certified BPA-free and lead-free, ensuring they are completely safe for mouthing.",
-//   },
-//   {
-//     question: "Is the wood prone to splintering?",
-//     answer:
-//       "We use solid, kiln-dried beechwood which is known for its high density and resistance to splintering. Every block undergoes a multi-stage sanding process to ensure all edges and corners are perfectly smooth.",
-//   },
-// ];
-
-// // Every clickable product across the site (home + collections + trending +
-// // related) indexed by slug, so /products/[slug] can render the product that
-// // was actually clicked instead of always showing the Master Architect Set.
-// const allProducts: Array<{
-//   slug: string;
-//   name: string;
-//   image: string;
-//   category?: string;
-//   ageRange?: string;
-//   description?: string;
-//   price?: number;
-//   rating?: number;
-//   reviewCount?: number;
-// }> = [
-//   ...featuredProducts,
-//   ...collectionProducts,
-//   ...trendingProducts,
-//   ...relatedProducts,
-// ];
-
-// export function getAllProductSlugs(): string[] {
-//   return allProducts.map((product) => product.slug);
-// }
-
-// export function getProductBySlug(slug: string): ProductDetailData | null {
-//   const match = allProducts.find((product) => product.slug === slug);
-//   if (!match) return null;
-
-//   const basePrice = match.price ?? 50;
-
-//   return {
-//     slug: match.slug,
-//     name: match.name,
-//     category: match.category ?? productDetail.category,
-//     ageRange: match.ageRange ?? productDetail.ageRange,
-//     description: match.description ?? productDetail.description,
-//     price: match.price,
-//     rating: match.rating ?? productDetail.rating,
-//     reviewCount: match.reviewCount ?? productDetail.reviewCount,
-//     heroImage: match.image,
-//     thumbnails: [match.image, ...productDetail.thumbnails],
-//     marketplaces: buildMarketplaces(basePrice),
-//   };
-// }
-
-// export function getRelatedProducts(excludeSlug: string): RelatedProduct[] {
-//   return relatedProducts.filter((product) => product.slug !== excludeSlug);
-// }
-
 import type {
   AccordionItemData,
   Category,
@@ -595,12 +92,12 @@ export const features: Feature[] = [
 ];
 
 export const categories: Category[] = [
-  {
-    name: "Mainan Sensorik",
-    gradient: "from-primary/60",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ0MrmrW__k1FQXWvxYjYcgqT1_ZPrhq-Yyowr8op5oLe0HgpzBgdoE19T4mDlIiCdNl4IFRe9Nooo1phbhx4WSSfLkaWVyMUqXct_7BIEJKZKl18hKGv4jrVSp69rXj0so7Bnn1u6fKieSZjUPL7ulnCvLBPubzKxfmPbmJcT69tK-iCUbFKAb5snmixKzPz53z5Kcut9BOrXHgT84bo_ml45tFfiKvOtJ_c-hio94lqslt5LfrHXlw",
-  },
+  // {
+  //   name: "Mainan Sensorik",
+  //   gradient: "from-primary/60",
+  //   image:
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ0MrmrW__k1FQXWvxYjYcgqT1_ZPrhq-Yyowr8op5oLe0HgpzBgdoE19T4mDlIiCdNl4IFRe9Nooo1phbhx4WSSfLkaWVyMUqXct_7BIEJKZKl18hKGv4jrVSp69rXj0so7Bnn1u6fKieSZjUPL7ulnCvLBPubzKxfmPbmJcT69tK-iCUbFKAb5snmixKzPz53z5Kcut9BOrXHgT84bo_ml45tFfiKvOtJ_c-hio94lqslt5LfrHXlw",
+  // },
   // {
   //   name: "Paket DIY",
   //   gradient: "from-secondary/60",
@@ -609,17 +106,13 @@ export const categories: Category[] = [
   // },
   {
     name: "Flashcard",
-    // gradient: "from-on-tertiary-container/60",
     gradient: "from-primary/60",
-    // span: true,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA9_McLsQ8R7arI3j6LpUE1g88_Cc74h1GMFo_llgdw1Ww9c0FS-C0ZsWryUwrvrOos-4vOzfrGuGcM02FhLV0ADcvRbVl9ldlwDpmJ7ID5dJinudizOyQEqTL5FyjieUiD96W7DH0fWe8IKgnJeMgxi2rdF0nXO5USCmHZ10eN-EJI2yARgm6RQyZZRk8vUzjuMKEDEIA8xXHMS4WV5oRD7DZ_M8mAkc2dNu7aXl85x9tvY1jlZtZYgA",
+    image: "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
   },
   {
     name: "Buku Mewarnai",
     gradient: "from-primary-container/60",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZeGEVAjWurooVqGwSrH7ScJnvxKLn0UiYoLw--JUK2bL-RVOyARZWCrfWjkyvvhXRP_Q9sg5_NMreJxS7rZF3FNDwo4TlXfLr_XoCNn3ubcq9OY4JN1eSUSO-126pH-st9iVknW2GAivINhX7BMCtvdWA_KlQgYdOlFS15b0rpYJw63UcBD_AR6wN7v60q5P9ofQhBromZPxwvqIIF8_nxaebYh5bCdgc2aZ0AiY1jxkJoRCKH7x8Wg",
+    image: "/assets/images/products/coloring-book/coloring-tracing-ocean.png",
   },
   // {
   //   name: "Buku Coding",
@@ -627,18 +120,38 @@ export const categories: Category[] = [
   //   image:
   //     "https://lh3.googleusercontent.com/aida-public/AB6AXuAolV-PMKthmEtNxWknWeyTaxpnnDn7_8lMss39PE6xbJKbrfJb7MIULn4meTObR_yqt7oTFj6upHwUvzfD9duiYMh1cFjw623NMOWAHA_4O8PGPPsf1tLzvR1W7ELPH7J8mfk1uWisrYJb6KWsoXwadlkWd6RV_lhhbcMHaxfAQslGo16Gr1ki4gw7vLw8KrpSy0tw8z3AIXuL7R3V31MO4ii2OSRbElGvMbpArSDD4wLPk3KGJ6ELwA",
   // },
-  {
-    name: "Buku Aktivitas",
-    gradient: "from-primary/60",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC8cYRzFlIreX3NEACTx8_1Dk_kzkP_fG1JQauvU2B9OMS24Lj2nrIjROgje8sX3UaMECkXm0LGkCdRPB-XQXQA4OPSfuJuq_sM24mfpIFxZHaPK5nYpouXTnXYBZ7NsfZQt7Yx_Tk3ne27SNfEBBLn448Qz0cH_ErnK78_Tg6xc97SoQTso9JqHQxS2jcW9HTa-A8gIVBr2KYva6m1GGT5DBvPyVuVihVnBMpNSSuGEmaX4LW6UQe4Cw",
-  },
+  // {
+  //   name: "Buku Aktivitas",
+  //   gradient: "from-primary/60",
+  //   image:
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuC8cYRzFlIreX3NEACTx8_1Dk_kzkP_fG1JQauvU2B9OMS24Lj2nrIjROgje8sX3UaMECkXm0LGkCdRPB-XQXQA4OPSfuJuq_sM24mfpIFxZHaPK5nYpouXTnXYBZ7NsfZQt7Yx_Tk3ne27SNfEBBLn448Qz0cH_ErnK78_Tg6xc97SoQTso9JqHQxS2jcW9HTa-A8gIVBr2KYva6m1GGT5DBvPyVuVihVnBMpNSSuGEmaX4LW6UQe4Cw",
+  // },
   // {
   //   name: "Materi Cetak",
   //   gradient: "from-secondary/60",
   //   image:
   //     "https://lh3.googleusercontent.com/aida-public/AB6AXuDkZwpmSlHM85IBg8-CB6dvQa10XIFKFuEdCNlXFz-j0ydnF01Zi2VfBnVVcxgqYEymGUfWnc5Sk5bBuAbBPUTADf1kYz3kjbmd98_L96ogfX0K_Ts0C8MLTOo-rm1Yj8JOSP1So3e04Tjpu2-9yw1ptlvty68OWqrc3-ufqH9iV8CVnYqpro02_RU3jQdwyn-IGsrNrK-Sl0YihUNmjjtvfPk6EkcfcsKPWqHkGdrlEYbhtojGvXRAnw",
   // },
+  {
+    name: "Montessori",
+    gradient: "from-secondary/60",
+    image: "/assets/images/products/montessori/busy-jar.png",
+  },
+  {
+    name: "Poster Edukasi",
+    gradient: "from-primary-container/60",
+    image: "/assets/images/products/poster/hewan-darat.png",
+  },
+  {
+    name: "Wipe & Clean",
+    gradient: "from-primary/60",
+    image: "/assets/images/products/wipe-and-clean/alfabet.png",
+  },
+  {
+    name: "Worksheet",
+    gradient: "from-secondary-container/60",
+    image: "/assets/images/products/worksheet/coloring-book-unicorn.png",
+  },
 ];
 
 export const trendingProducts: TrendingProduct[] = [
@@ -1146,6 +659,1217 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Informasi Keamanan",
         content:
           "Tinta cetak non-toxic, aman digunakan anak usia 3 tahun ke atas dengan pengawasan.",
+      },
+    ],
+  },
+  {
+    slug: "busy-jar-montessori",
+    name: "Busy Jar Montessori",
+    category: "Montessori",
+    description:
+      "Toples aktivitas sensorik berisi pompom, kancing, dan kartu tugas edukatif.",
+    ageRange: "Ages 2-5",
+    price: 45,
+    rating: 5,
+    reviewCount: 20,
+    ribbon: "New",
+    featured: true,
+    image: "/assets/images/products/montessori/busy-jar.png",
+    thumbnails: ["/assets/images/products/montessori/busy-jar.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Enam toples aktivitas berisi pompom, kancing warna-warni, jepitan kayu, dan kartu tugas bergambar melatih motorik halus sekaligus pengenalan warna dan bentuk dalam satu set.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Motorik Halus: Menjepit dan menyusun benda-benda kecil dengan presisi.",
+          "Pengenalan Warna & Bentuk: Mencocokkan benda sesuai instruksi kartu tugas.",
+          "Konsentrasi: Melatih fokus menyelesaikan satu aktivitas hingga tuntas.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "6 toples berisi pompom, kancing, jepitan kayu, pipe cleaner, dan bentuk plastik, dilengkapi 4 kartu aktivitas bergambar.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: plastik BPA-free, kayu, dan wol. Ukuran toples: 6x6cm.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Bebas BPA dan ftalat. Berisi komponen berukuran kecil, perlu pengawasan orang tua untuk anak di bawah 3 tahun.",
+      },
+    ],
+  },
+  {
+    slug: "play-mat-sensori",
+    name: "Play Mat Sensori",
+    category: "Montessori",
+    description:
+      "Matras puzzle bertekstur untuk eksplorasi raba dan stimulasi sensorik anak.",
+    ageRange: "Ages 1-4",
+    price: 55,
+    rating: 4.5,
+    reviewCount: 14,
+    image: "/assets/images/products/montessori/play-mat.png",
+    thumbnails: ["/assets/images/products/montessori/play-mat.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Matras puzzle berbahan rumput sintetis dilengkapi elemen bertekstur seperti pompom, kancing, kain kasar, dan spons untuk merangsang indera peraba anak.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Stimulasi Sentuhan: Mengenal tekstur kasar, halus, dan lembut dalam satu matras.",
+          "Motorik Halus: Memutar baling-baling dan menyentuh tiap permukaan.",
+          "Eksplorasi Bebas: Bermain tanpa arahan untuk melatih rasa ingin tahu.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 matras puzzle sensorik ukuran 30x30cm dengan 9 elemen tekstur berbeda.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content: "Material: foam EVA non-toxic. Ukuran: 30x30cm.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Bebas BPA, permukaan lembut dan aman digunakan sebagai alas bermain anak.",
+      },
+    ],
+  },
+  {
+    slug: "poster-hewan-darat",
+    name: "Poster Hewan Darat",
+    category: "Poster Edukasi",
+    description:
+      "Poster edukasi mengenal nama hewan darat dalam Bahasa Indonesia dan Inggris.",
+    ageRange: "Ages 2+",
+    price: 15,
+    rating: 5,
+    reviewCount: 34,
+    ribbon: "Best Seller",
+    featured: true,
+    image: "/assets/images/products/poster/hewan-darat.png",
+    thumbnails: ["/assets/images/products/poster/hewan-darat.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Poster bergambar 16 hewan darat lengkap dengan nama Indonesia dan Inggris memperkaya kosakata anak sejak dini lewat ilustrasi yang menarik.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Kosakata: Mengenal nama hewan dalam dua bahasa sekaligus.",
+          "Pengenalan Bentuk: Mengenali ciri khas tiap hewan lewat ilustrasi detail.",
+          "Bahasa Inggris Dasar: Menghafal padanan kata sederhana dalam Bahasa Inggris.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content: "1 lembar poster laminasi berisi 16 ilustrasi hewan darat.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content: "Ukuran: A3 (29.7x42cm). Bahan: art paper laminasi doff.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content: "Tinta cetak non-toxic, tahan lecek dan mudah dibersihkan.",
+      },
+    ],
+  },
+  {
+    slug: "poster-hewan-laut",
+    name: "Poster Hewan Laut",
+    category: "Poster Edukasi",
+    description:
+      "Poster edukasi mengenal nama biota laut dalam Bahasa Indonesia dan Inggris.",
+    ageRange: "Ages 2+",
+    price: 15,
+    rating: 5,
+    reviewCount: 27,
+    image: "/assets/images/products/poster/hewan-laut.png",
+    thumbnails: ["/assets/images/products/poster/hewan-laut.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Poster bergambar 16 biota laut lengkap dengan nama Indonesia dan Inggris mengajak anak menjelajahi dunia bawah laut sambil belajar kosakata baru.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Kosakata: Mengenal nama biota laut dalam dua bahasa sekaligus.",
+          "Pengenalan Bentuk: Mengenali ciri khas tiap biota laut lewat ilustrasi detail.",
+          "Bahasa Inggris Dasar: Menghafal padanan kata sederhana dalam Bahasa Inggris.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content: "1 lembar poster laminasi berisi 16 ilustrasi biota laut.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content: "Ukuran: A3 (29.7x42cm). Bahan: art paper laminasi doff.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content: "Tinta cetak non-toxic, tahan lecek dan mudah dibersihkan.",
+      },
+    ],
+  },
+  {
+    slug: "poster-hewan-udara",
+    name: "Poster Hewan Udara",
+    category: "Poster Edukasi",
+    description:
+      "Poster edukasi mengenal nama hewan udara dalam Bahasa Indonesia dan Inggris.",
+    ageRange: "Ages 2+",
+    price: 15,
+    rating: 4.5,
+    reviewCount: 19,
+    image: "/assets/images/products/poster/hewan-udara.png",
+    thumbnails: ["/assets/images/products/poster/hewan-udara.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Poster bergambar 16 hewan udara mulai dari burung hingga serangga, lengkap dengan nama Indonesia dan Inggris untuk memperkaya kosakata anak.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Kosakata: Mengenal nama hewan udara dalam dua bahasa sekaligus.",
+          "Pengenalan Bentuk: Mengenali ciri khas tiap hewan lewat ilustrasi detail.",
+          "Bahasa Inggris Dasar: Menghafal padanan kata sederhana dalam Bahasa Inggris.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content: "1 lembar poster laminasi berisi 16 ilustrasi hewan udara.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content: "Ukuran: A3 (29.7x42cm). Bahan: art paper laminasi doff.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content: "Tinta cetak non-toxic, tahan lecek dan mudah dibersihkan.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-alfabet",
+    name: "Wipe & Clean Alfabet",
+    category: "Wipe & Clean",
+    description:
+      "Papan laminasi tulis-hapus untuk belajar mengenal huruf A-Z bersama gambar.",
+    ageRange: "Ages 3+",
+    price: 20,
+    rating: 5,
+    reviewCount: 42,
+    ribbon: "Best Seller",
+    featured: true,
+    image: "/assets/images/products/wipe-and-clean/alfabet.png",
+    thumbnails: ["/assets/images/products/wipe-and-clean/alfabet.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan laminasi berisi huruf A sampai Z lengkap dengan gambar dan garis putus-putus untuk berlatih menulis huruf berulang kali menggunakan spidol khusus.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Huruf: Menghafal bentuk huruf besar A-Z lewat gambar pendamping.",
+          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
+          "Kosakata Dwibahasa: Mengenal nama benda dalam Bahasa Indonesia dan Inggris.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 3 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-angka-0-10",
+    name: "Wipe & Clean Angka 0-10",
+    category: "Wipe & Clean",
+    description:
+      "Papan laminasi tulis-hapus untuk berlatih menulis angka 0 sampai 10.",
+    ageRange: "Ages 3+",
+    price: 20,
+    rating: 5,
+    reviewCount: 38,
+    image: "/assets/images/products/wipe-and-clean/angka-0-10.png",
+    thumbnails: ["/assets/images/products/wipe-and-clean/angka-0-10.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan laminasi berisi angka 0 sampai 10 dengan garis putus-putus membantu anak berlatih menulis angka dengan benar secara berulang.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Angka: Menghafal bentuk dan urutan angka 0-10.",
+          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
+          "Konsentrasi: Melatih fokus menyelesaikan tiap angka satu per satu.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 3 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-day-of-the-week",
+    name: "Wipe & Clean Hari dalam Seminggu",
+    category: "Wipe & Clean",
+    description:
+      "Papan laminasi tulis-hapus untuk mengenal nama hari dalam Bahasa Indonesia dan Inggris.",
+    ageRange: "Ages 4+",
+    price: 18,
+    rating: 4.5,
+    reviewCount: 16,
+    image: "/assets/images/products/wipe-and-clean/day-of-the-week.png",
+    thumbnails: ["/assets/images/products/wipe-and-clean/day-of-the-week.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan laminasi memuat 7 nama hari dalam Bahasa Indonesia dan Inggris lengkap dengan garis putus-putus untuk berlatih menulis.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Waktu: Menghafal urutan hari dalam seminggu.",
+          "Kosakata Dwibahasa: Mengenal nama hari dalam Bahasa Indonesia dan Inggris.",
+          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-month-of-the-year",
+    name: "Wipe & Clean Bulan dalam Setahun",
+    category: "Wipe & Clean",
+    description:
+      "Papan laminasi tulis-hapus untuk mengenal nama bulan dalam Bahasa Indonesia dan Inggris.",
+    ageRange: "Ages 4+",
+    price: 18,
+    rating: 4.5,
+    reviewCount: 12,
+    image: "/assets/images/products/wipe-and-clean/month-of-the-year.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/month-of-the-year.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan laminasi memuat 12 nama bulan dalam Bahasa Indonesia dan Inggris lengkap dengan garis putus-putus untuk berlatih menulis.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Waktu: Menghafal urutan bulan dalam setahun.",
+          "Kosakata Dwibahasa: Mengenal nama bulan dalam Bahasa Indonesia dan Inggris.",
+          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-shape",
+    name: "Wipe & Clean Bentuk",
+    category: "Wipe & Clean",
+    description:
+      "Papan laminasi tulis-hapus untuk mengenal 12 macam bentuk geometris.",
+    ageRange: "Ages 3+",
+    price: 18,
+    rating: 5,
+    reviewCount: 22,
+    ribbon: "New",
+    image: "/assets/images/products/wipe-and-clean/shape.png",
+    thumbnails: ["/assets/images/products/wipe-and-clean/shape.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan laminasi memuat 12 bentuk geometris seperti lingkaran, segitiga, hingga segi enam, lengkap dengan garis putus-putus untuk berlatih menebalkan bentuk.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Bentuk: Mengenal 12 macam bentuk geometris dasar.",
+          "Kosakata Dwibahasa: Mengenal nama bentuk dalam Bahasa Indonesia dan Inggris.",
+          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 3 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-bunny",
+    name: "Wipe & Clean Jadwal Pelajaran Bunny",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan tema kelinci lucu.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 5,
+    reviewCount: 8,
+    image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-bunny.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-bunny.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema kelinci membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu dengan cara yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Tanggung Jawab: Melatih anak menyiapkan pelajaran sesuai jadwal.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-cute",
+    name: "Wipe & Clean Jadwal Pelajaran Cute",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan ilustrasi bertema imut.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 4.5,
+    reviewCount: 6,
+    image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-cute.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-cute.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema imut membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu dengan cara yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Tanggung Jawab: Melatih anak menyiapkan pelajaran sesuai jadwal.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-doctor",
+    name: "Wipe & Clean Jadwal Pelajaran Dokter",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi dokter.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 4.5,
+    reviewCount: 5,
+    image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-doctor.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-doctor.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema dokter membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu sekaligus mengenal profesi.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Pengenalan Profesi: Mengenal profesi dokter lewat ilustrasi tema.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-police",
+    name: "Wipe & Clean Jadwal Pelajaran Polisi",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi polisi.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 5,
+    reviewCount: 9,
+    image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-police.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-police.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema polisi membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu sekaligus mengenal profesi.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Pengenalan Profesi: Mengenal profesi polisi lewat ilustrasi tema.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-sekolah",
+    name: "Wipe & Clean Jadwal Pelajaran Sekolah",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan ilustrasi bertema sekolah.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 5,
+    reviewCount: 11,
+    image:
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-sekolah.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-sekolah.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema sekolah membantu anak mencatat dan mengingat jadwal pelajaran Senin sampai Sabtu di kolom yang sudah tersedia.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Tanggung Jawab: Melatih anak menyiapkan pelajaran sesuai jadwal.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-soldier",
+    name: "Wipe & Clean Jadwal Pelajaran Tentara",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi tentara.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 4.5,
+    reviewCount: 7,
+    image:
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-soldier.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-soldier.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema tentara membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu sekaligus mengenal profesi.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Pengenalan Profesi: Mengenal profesi tentara lewat ilustrasi tema.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-unicorn",
+    name: "Wipe & Clean Jadwal Pelajaran Unicorn",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan tema unicorn yang lucu.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 5,
+    reviewCount: 13,
+    ribbon: "New",
+    image:
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-unicorn.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-unicorn.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema unicorn membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu dengan cara yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Tanggung Jawab: Melatih anak menyiapkan pelajaran sesuai jadwal.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "wipe-clean-jadwal-pelajaran-wild",
+    name: "Wipe & Clean Jadwal Pelajaran Hewan Liar",
+    category: "Wipe & Clean",
+    description:
+      "Papan jadwal pelajaran mingguan tulis-hapus dengan tema hewan liar.",
+    ageRange: "Ages 4+",
+    price: 20,
+    rating: 4.5,
+    reviewCount: 6,
+    image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-wild.png",
+    thumbnails: [
+      "/assets/images/products/wipe-and-clean/jadwal-pelajaran-wild.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "Papan jadwal pelajaran mingguan bertema hewan liar membantu anak mencatat dan mengingat jadwal sekolah Senin sampai Sabtu sekaligus mengenal satwa.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Manajemen Waktu: Membiasakan anak mengecek jadwal harian secara mandiri.",
+          "Pengenalan Hewan: Mengenal berbagai hewan liar lewat ilustrasi tema.",
+          "Motorik Halus: Menulis nama mata pelajaran pada kolom yang tersedia.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "worksheet-coloring-book-unicorn",
+    name: "Coloring Book Unicorn",
+    category: "Worksheet",
+    description:
+      "Buku mewarnai bertema unicorn dengan 13 halaman ilustrasi bergaris tebal.",
+    ageRange: "Ages 3+",
+    price: 25,
+    rating: 5,
+    reviewCount: 17,
+    featured: true,
+    image: "/assets/images/products/worksheet/coloring-book-unicorn.png",
+    thumbnails: ["/assets/images/products/worksheet/coloring-book-unicorn.png"],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "13 halaman ilustrasi unicorn bergaris tebal mengajak anak mewarnai sambil melatih kreativitas dan koordinasi tangan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Motorik Halus: Melatih genggaman pensil warna/crayon saat mewarnai.",
+          "Kreativitas: Kebebasan memilih warna sesuai imajinasi anak.",
+          "Fokus & Ketelitian: Melatih kesabaran mewarnai di dalam garis.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 buku worksheet berisi 13 halaman ilustrasi unicorn, dicetak di atas kertas tebal.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content: "Ukuran: A4. Jumlah halaman: 13. Kertas: 150gsm bebas asam.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, aman digunakan anak usia 3 tahun ke atas dengan pengawasan.",
+      },
+    ],
+  },
+  {
+    slug: "worksheet-coloring-book-permainan-tradisional",
+    name: "Coloring Book Permainan Tradisional",
+    category: "Worksheet",
+    description:
+      "Buku mewarnai bertema permainan tradisional Indonesia seperti congklak dan engklek.",
+    ageRange: "Ages 3+",
+    price: 25,
+    rating: 5,
+    reviewCount: 14,
+    image:
+      "/assets/images/products/worksheet/coloring-book-permainan-tradisional.png",
+    thumbnails: [
+      "/assets/images/products/worksheet/coloring-book-permainan-tradisional.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "12 halaman ilustrasi permainan tradisional Indonesia seperti congklak, engklek, dan gasing mengenalkan budaya sambil melatih kreativitas mewarnai.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Pengenalan Budaya: Mengenal ragam permainan tradisional Indonesia.",
+          "Motorik Halus: Melatih genggaman pensil warna/crayon saat mewarnai.",
+          "Kreativitas: Kebebasan memilih warna sesuai imajinasi anak.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 buku worksheet berisi 12 halaman ilustrasi permainan tradisional, dicetak di atas kertas tebal.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content: "Ukuran: A4. Jumlah halaman: 12. Kertas: 150gsm bebas asam.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, aman digunakan anak usia 3 tahun ke atas dengan pengawasan.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-penjumlahan-pilot",
+    name: "Flashcard Tabel Penjumlahan Pilot",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
+    ageRange: "Ages 5+",
+    price: 30,
+    rating: 5,
+    reviewCount: 24,
+    ribbon: "Best Seller",
+    featured: true,
+    image: "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
+      "/assets/images/products/flashcard/penjumlahan-pilot-female.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema pilot memuat tabel penjumlahan 1 sampai 10, membantu anak menghafal hasil penjumlahan lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil penjumlahan 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel penjumlahan, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-pengurangan-astronot",
+    name: "Flashcard Tabel Pengurangan Astronot",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
+    ageRange: "Ages 5+",
+    price: 30,
+    rating: 5,
+    reviewCount: 18,
+    image: "/assets/images/products/flashcard/pengurangan-astronot-male.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/pengurangan-astronot-male.png",
+      "/assets/images/products/flashcard/pengurangan-astronot-female.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema astronot memuat tabel pengurangan 1 sampai 10, membantu anak menghafal hasil pengurangan lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil pengurangan 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel pengurangan, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-perkalian-polisi",
+    name: "Flashcard Tabel Perkalian Polisi",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
+    ageRange: "Ages 5+",
+    price: 30,
+    rating: 5,
+    reviewCount: 21,
+    image: "/assets/images/products/flashcard/perkalian-police-male.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/perkalian-police-male.png",
+      "/assets/images/products/flashcard/perkalian-police-female.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema polisi memuat tabel perkalian 1 sampai 10, membantu anak menghafal hasil perkalian lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil perkalian 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel perkalian, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-pembagian-pemadam",
+    name: "Flashcard Tabel Pembagian Pemadam Kebakaran",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
+    ageRange: "Ages 5+",
+    price: 30,
+    rating: 4.5,
+    reviewCount: 15,
+    image: "/assets/images/products/flashcard/pembagian-pemadam-male.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/pembagian-pemadam-male.png",
+      "/assets/images/products/flashcard/pembagian-pemadam-female.png",
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema pemadam kebakaran memuat tabel pembagian 1 sampai 10, membantu anak menghafal hasil pembagian lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil pembagian 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel pembagian, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
       },
     ],
   },
