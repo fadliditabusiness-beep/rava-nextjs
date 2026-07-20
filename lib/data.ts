@@ -2134,7 +2134,7 @@ const marketplacePlatforms: Array<
     icon: "arrow_forward",
   },
   {
-    name: "Pesan melalui WhatsApp",
+    name: "WhatsApp",
     color: "#25D366",
     hoverColor: "#1da851",
     icon: "chat",
