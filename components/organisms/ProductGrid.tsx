@@ -8,7 +8,7 @@ type ProductGridProps = {
 export default function ProductGrid({ selectedCategory }: ProductGridProps) {
   const products = selectedCategory
     ? collectionProducts.filter(
-        (product) => product.category === selectedCategory
+        (product) => product.category === selectedCategory,
       )
     : collectionProducts;
 
@@ -25,7 +25,7 @@ export default function ProductGrid({ selectedCategory }: ProductGridProps) {
           Belum ada produk pada kategori ini.
         </p>
       )}
-      {products.length > 0 && (
+      {/* {products.length > 0 && (
         <div className="flex justify-center mt-section-gap">
           <button
             type="button"
@@ -34,7 +34,7 @@ export default function ProductGrid({ selectedCategory }: ProductGridProps) {
             Load More Products
           </button>
         </div>
-      )}
+      )} */}
     </section>
   );
 }

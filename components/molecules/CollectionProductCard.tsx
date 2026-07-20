@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MaterialIcon from "@/components/atoms/MaterialIcon";
 import StarRating from "@/components/atoms/StarRating";
 import type { CollectionProduct } from "@/lib/types";
 
@@ -26,7 +27,10 @@ export default function CollectionProductCard({
           </span>
         </div>
       )}
-      <div className="w-full aspect-square mb-stack-md relative overflow-hidden rounded-lg bg-surface-container-low">
+      <Link
+        href={`/products/${slug}`}
+        className="w-full aspect-square mb-stack-md relative overflow-hidden rounded-lg bg-surface-container-low block"
+      >
         <Image
           src={image}
           alt={name}
@@ -34,7 +38,13 @@ export default function CollectionProductCard({
           sizes="(max-width: 768px) 50vw, 25vw"
           className="image-zoom object-contain p-4"
         />
-      </div>
+        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/50 transition-colors duration-300 flex items-center justify-center">
+          <span className="flex items-center gap-1 text-white font-bold py-3 px-6 rounded-full border-2 border-white opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            View Detail
+            <MaterialIcon name="arrow_forward" className="text-lg" />
+          </span>
+        </div>
+      </Link>
       <div className="flex items-center gap-1 mb-2">
         <StarRating rating={rating} colorClassName="text-[#F4932F]" />
         <span className="text-on-surface-variant text-[12px] ml-1">
@@ -45,23 +55,9 @@ export default function CollectionProductCard({
       <p className="font-body-md text-on-surface-variant text-sm mb-2">
         {description}
       </p>
-      <span className="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-[12px] font-bold mb-stack-md">
+      <span className="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-[12px] font-bold">
         {ageRange}
       </span>
-      <div className="mt-auto flex flex-col w-full gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <Link
-          href={`/products/${slug}`}
-          className="w-full bg-primary text-on-primary py-3 rounded-full font-body-md hover:bg-primary/90 transition-all"
-        >
-          View Detail
-        </Link>
-        <button
-          type="button"
-          className="w-full border-2 border-secondary text-secondary py-3 rounded-full font-body-md hover:bg-secondary/10 transition-all"
-        >
-          Quick View
-        </button>
-      </div>
     </div>
   );
 }
