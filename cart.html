@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Play | Shopping Cart</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d1e4ff",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#3f6185",
+                    "secondary-container": "#88f4f3",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#2e1500",
+                    "outline": "#73777f",
+                    "tertiary-fixed": "#ffdcc1",
+                    "on-secondary-container": "#007070",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#43474e",
+                    "on-background": "#1b1d10",
+                    "tertiary": "#321800",
+                    "secondary-fixed-dim": "#6bd7d7",
+                    "primary-container": "#0f3658",
+                    "surface-container": "#efefda",
+                    "on-primary-fixed": "#001d35",
+                    "surface-container-high": "#e9ead4",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fbfbe5",
+                    "inverse-on-surface": "#f2f2dc",
+                    "primary": "#00203b",
+                    "tertiary-container": "#512a00",
+                    "on-secondary-fixed-variant": "#004f50",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#26496c",
+                    "surface": "#fbfbe5",
+                    "on-secondary-fixed": "#002020",
+                    "tertiary-fixed-dim": "#ffb779",
+                    "inverse-surface": "#303223",
+                    "secondary-fixed": "#88f4f3",
+                    "background": "#fbfbe5",
+                    "surface-variant": "#e4e4cf",
+                    "primary-fixed-dim": "#a8c9f3",
+                    "surface-container-highest": "#e4e4cf",
+                    "on-tertiary-container": "#e38521",
+                    "on-tertiary-fixed-variant": "#6c3a00",
+                    "inverse-primary": "#a8c9f3",
+                    "secondary": "#006a6a",
+                    "outline-variant": "#c3c7cf",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f5df",
+                    "on-surface": "#1b1d10",
+                    "on-primary-container": "#7e9fc7",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdbc6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "gutter": "20px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "xs": "4px",
+                    "xl": "40px",
+                    "container-max": "1280px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "body-lg": ["Quicksand"],
+                    "title-md": ["Quicksand"],
+                    "label-sm": ["Quicksand"],
+                    "display-lg": ["Quicksand"],
+                    "body-md": ["Quicksand"],
+                    "label-md": ["Quicksand"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbfbe5;
+            font-family: 'Quicksand', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .product-card-shadow {
+            box-shadow: 0 4px 12px rgba(0, 32, 59, 0.05);
+        }
+        .summary-card-shadow {
+            box-shadow: 0 12px 32px rgba(0, 32, 59, 0.08);
+        }
+        .hover-lift {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 32, 59, 0.08);
+        }
+    </style>
+</head>
+<body class="text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md shadow-sm">
+<nav class="max-w-container-max mx-auto px-margin-desktop flex items-center justify-between h-20 px-6 lg:px-12">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-display-lg text-primary" href="#">Lumina Play</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Shop</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Track Order</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-container transition-colors relative">
+<span class="material-symbols-outlined text-primary">shopping_cart</span>
+<span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-bold">1</span>
+</button>
+<button class="md:hidden p-2">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-6 lg:px-12 py-12">
+<!-- Cart Headline -->
+<div class="mb-10">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Your Play Basket</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Review your selected joy-makers before checkout.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter" id="cart-container">
+<!-- Product List -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Cart Item 1 -->
+<div class="bg-surface-container-lowest product-card-shadow rounded-xl p-4 md:p-6 flex flex-col md:flex-row gap-6 items-center group hover-lift border border-surface-variant/20">
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden bg-surface flex-shrink-0">
+<img alt="Lumina Sensory Cube" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLstRlsbPqEx7HBidc5r8qHN_WR7ppYigr2ut4d6ydqVrPd52xZK8Pae6TCH5SqMHFKXow_kIg7pa69S-v7bRfZQLfMJ97hHEBcdwNfE_W43cANvxUs2cor-cl0NlSglTPPJxette5dBY556ra2TEgMsX1j8Wyzkl1YvCQfWVbfAqc45KMIHRPcegoc6skDu-Cl8pNEjDdyTQ1Zj9sOS7JDZWY0DC-3eUagmYudnUgXl3oRZL4zXL_z6yB5y"/>
+</div>
+<div class="flex-grow space-y-1 text-center md:text-left">
+<h3 class="font-title-md text-title-md text-primary">Lumina Sensory Cube</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">SKU: LP-WDS-004</p>
+<div class="pt-4 flex flex-wrap justify-center md:justify-start items-center gap-6">
+<!-- Quantity Selector -->
+<div class="flex items-center bg-surface-container-low rounded-full px-2 py-1 border border-outline-variant">
+<button class="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary transition-colors" onclick="decrement(this)">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-4 font-label-md text-label-md text-primary qty-val">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary transition-colors" onclick="increment(this)">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors font-label-md text-label-md" onclick="removeItem(this)">
+<span class="material-symbols-outlined text-md">delete</span>
+<span>Remove</span>
+</button>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<p class="font-title-md text-title-md text-secondary">$54.00</p>
+</div>
+</div>
+<!-- Product 2 Placeholder for visual balance -->
+<div class="bg-surface-container-lowest product-card-shadow rounded-xl p-4 md:p-6 flex flex-col md:flex-row gap-6 items-center group hover-lift border border-surface-variant/20">
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden bg-surface flex-shrink-0">
+<div class="w-full h-full bg-surface-container-high flex items-center justify-center" data-alt="A collection of minimalist wooden stacking rings in a soft gradient of pastel colors. The toy is arranged on a clean cream surface with soft ambient lighting, emphasizing high-quality natural textures and child-safe finishes. The overall aesthetic is premium, calm, and Montessori-inspired." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBy2LbYncmzIiXzObEzEzIFgWtNWlVaXml9N8tlKKGVuMIGAARgfFDds2fgFFJvzTKMNAN_nO5rkhYogEGgT8sjPebhm_MjEQiJrZ-ObXTTvWB7UZe71B48WxzbCWeZ6GsqeGfCk3c7-9YB7UCtARh8kcRqqnJu9Tcs80kK6F5hRbaFUvy_N4iJppG6-s90m0tx8SDjQTOgGls9yLnArp2gzvdf_3LLbgzul1NAUCwnq0w7RjMRP_v-VYZgNA-Zkl_hZQwh-5oRMtVn')"></div>
+</div>
+<div class="flex-grow space-y-1 text-center md:text-left">
+<h3 class="font-title-md text-title-md text-primary">Prism Stacking Tower</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">SKU: LP-WDS-012</p>
+<div class="pt-4 flex flex-wrap justify-center md:justify-start items-center gap-6">
+<div class="flex items-center bg-surface-container-low rounded-full px-2 py-1 border border-outline-variant">
+<button class="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary transition-colors" onclick="decrement(this)">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="px-4 font-label-md text-label-md text-primary qty-val">2</span>
+<button class="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary transition-colors" onclick="increment(this)">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors font-label-md text-label-md" onclick="removeItem(this)">
+<span class="material-symbols-outlined text-md">delete</span>
+<span>Remove</span>
+</button>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<p class="font-title-md text-title-md text-secondary">$32.00</p>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 text-secondary font-label-md text-label-md hover:gap-3 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">arrow_back</span>
+<span>Continue Shopping</span>
+</a>
+</div>
+</div>
+<!-- Order Summary -->
+<aside class="lg:col-span-4">
+<div class="bg-surface-container-low summary-card-shadow rounded-xl p-8 sticky top-28 border border-surface-variant/30">
+<h2 class="font-headline-lg text-[24px] text-primary mb-6">Order Summary</h2>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="text-on-surface font-semibold">$118.00</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant">Shipping (Estimated)</span>
+<span class="text-on-surface font-semibold">$8.50</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md">
+<span class="text-on-surface-variant">Tax</span>
+<span class="text-on-surface font-semibold">$9.44</span>
+</div>
+<div class="h-px bg-outline-variant/30 my-2"></div>
+<div class="flex justify-between">
+<span class="font-title-md text-title-md text-primary">Grand Total</span>
+<span class="font-title-md text-title-md text-secondary">$135.94</span>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-lg font-title-md text-title-md hover:bg-on-secondary-container transition-colors shadow-md active:scale-95 transition-transform duration-100 flex items-center justify-center gap-2">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant">
+                            Taxes and shipping calculated at checkout
+                        </p>
+</div>
+<!-- Trust Badges -->
+<div class="mt-8 pt-8 border-t border-outline-variant/30 grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Secure Payment</span>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Eco-Packaging</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Empty State (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-20 px-6 text-center max-w-lg mx-auto" id="empty-state">
+<div class="w-48 h-48 bg-surface-container rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[80px] text-on-surface-variant/40">shopping_cart_off</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Your cart is empty.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Let's find something fun to explore!</p>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-title-md text-title-md hover:bg-primary-container transition-all hover:shadow-lg active:scale-95">
+                Browse Products
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-low mt-20 border-t border-surface-variant/20">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 lg:px-12 py-16">
+<div class="col-span-1 md:col-span-1">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Lumina Play</h2>
+<p class="font-body-md text-body-md text-on-surface-variant pr-4">Crafting moments of wonder through Montessori-inspired play.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">Customer Care</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">Track Order</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">Shipping Information</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">FAQ</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">Our World</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">Our Story</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-secondary transition-all" href="#">Wholesale</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">Newsletter</h4>
+<div class="flex items-center gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-secondary focus:border-secondary outline-none text-body-md" placeholder="Your email" type="email"/>
+<button class="bg-secondary text-on-secondary p-2 rounded-lg hover:bg-on-secondary-container transition-colors">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-outline-variant/20 px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Lumina Play (RAVA Toys). Montessori-inspired joy.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-secondary" href="#"><span class="material-symbols-outlined">brand_awareness</span></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"><span class="material-symbols-outlined">favorite</span></a>
+</div>
+</div>
+</footer>
+<script>
+        function increment(btn) {
+            const valSpan = btn.parentNode.querySelector('.qty-val');
+            let val = parseInt(valSpan.innerText);
+            valSpan.innerText = val + 1;
+        }
+
+        function decrement(btn) {
+            const valSpan = btn.parentNode.querySelector('.qty-val');
+            let val = parseInt(valSpan.innerText);
+            if (val > 1) {
+                valSpan.innerText = val - 1;
+            }
+        }
+
+        function removeItem(btn) {
+            const card = btn.closest('.bg-surface-container-lowest');
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            card.style.transition = 'all 0.3s ease';
+            
+            setTimeout(() => {
+                card.remove();
+                checkEmpty();
+            }, 300);
+        }
+
+        function checkEmpty() {
+            const items = document.querySelectorAll('#cart-container .lg\\:col-span-8 > div.bg-surface-container-lowest');
+            if (items.length === 0) {
+                document.getElementById('cart-container').classList.add('hidden');
+                document.getElementById('empty-state').classList.remove('hidden');
+                document.getElementById('empty-state').classList.add('flex');
+            }
+        }
+    </script>
+</body></html>

@@ -26,12 +26,14 @@ export default function ProductDetailTemplate({
             productName={product.name}
           />
           <ProductInfo
+            slug={product.slug}
             category={product.category}
             ageRange={product.ageRange}
             name={product.name}
             rating={product.rating}
             reviewCount={product.reviewCount}
             description={product.description}
+            image={product.heroImage}
             marketplaces={product.marketplaces}
           />
         </div>

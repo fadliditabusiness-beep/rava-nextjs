@@ -18,6 +18,18 @@ export type AccordionItemData = {
   defaultOpen?: boolean;
 };
 
+export type MarketplacePricing = {
+  beforeDiscount: number;
+  afterDiscount: number;
+};
+
+export type ProductMarketplacePricing = {
+  shopee: MarketplacePricing;
+  tokopedia: MarketplacePricing;
+  tiktokShop: MarketplacePricing;
+  whatsapp: MarketplacePricing;
+};
+
 export type CollectionProduct = {
   slug: string;
   name: string;
@@ -25,6 +37,7 @@ export type CollectionProduct = {
   description: string;
   ageRange: string;
   price: number;
+  marketplace: ProductMarketplacePricing;
   rating: number;
   reviewCount: number;
   image: string;
@@ -86,7 +99,8 @@ export type RelatedProduct = {
 
 export type Marketplace = {
   name: string;
-  price: number;
+  originalPrice: number;
+  discountedPrice: number;
   color: string;
   hoverColor: string;
   icon: string;

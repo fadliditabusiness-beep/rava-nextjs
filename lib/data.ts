@@ -10,6 +10,7 @@ import type {
   RelatedProduct,
   ProductDetailData,
   Marketplace,
+  ProductMarketplacePricing,
 } from "./types";
 
 export const siteConfig = {
@@ -224,6 +225,12 @@ export const collectionProducts: CollectionProduct[] = [
     description: "Tactile wooden rings for coordination.",
     ageRange: "Ages 0-2",
     price: 35,
+    marketplace: {
+      shopee: { beforeDiscount: 35000, afterDiscount: 35000 },
+      tokopedia: { beforeDiscount: 35000, afterDiscount: 31500 },
+      tiktokShop: { beforeDiscount: 35000, afterDiscount: 31500 },
+      whatsapp: { beforeDiscount: 35000, afterDiscount: 28000 },
+    },
     rating: 5,
     reviewCount: 48,
     ribbon: "New",
@@ -272,6 +279,12 @@ export const collectionProducts: CollectionProduct[] = [
     description: "Engraved surfaces for sensory play.",
     ageRange: "Ages 3+",
     price: 48,
+    marketplace: {
+      shopee: { beforeDiscount: 48000, afterDiscount: 48000 },
+      tokopedia: { beforeDiscount: 48000, afterDiscount: 43200 },
+      tiktokShop: { beforeDiscount: 48000, afterDiscount: 43200 },
+      whatsapp: { beforeDiscount: 48000, afterDiscount: 38400 },
+    },
     rating: 4.5,
     reviewCount: 124,
     ribbon: "Best Seller",
@@ -320,6 +333,12 @@ export const collectionProducts: CollectionProduct[] = [
     description: "Cognitive logic through soft forms.",
     ageRange: "Ages 3-5",
     price: 40,
+    marketplace: {
+      shopee: { beforeDiscount: 40000, afterDiscount: 40000 },
+      tokopedia: { beforeDiscount: 40000, afterDiscount: 36000 },
+      tiktokShop: { beforeDiscount: 40000, afterDiscount: 36000 },
+      whatsapp: { beforeDiscount: 40000, afterDiscount: 32000 },
+    },
     rating: 5,
     reviewCount: 56,
     image:
@@ -367,6 +386,12 @@ export const collectionProducts: CollectionProduct[] = [
     description: "Gentle auditory and tactile feedback.",
     ageRange: "Ages 0-2",
     price: 22,
+    marketplace: {
+      shopee: { beforeDiscount: 22000, afterDiscount: 22000 },
+      tokopedia: { beforeDiscount: 22000, afterDiscount: 19800 },
+      tiktokShop: { beforeDiscount: 22000, afterDiscount: 19800 },
+      whatsapp: { beforeDiscount: 22000, afterDiscount: 17600 },
+    },
     rating: 4,
     reviewCount: 31,
     ribbon: "New",
@@ -415,6 +440,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Mewarnai sesuai angka untuk melatih fokus dan pengenalan warna.",
     ageRange: "Ages 3+",
     price: 25,
+    marketplace: {
+      shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
+      tokopedia: { beforeDiscount: 25000, afterDiscount: 22500 },
+      tiktokShop: { beforeDiscount: 25000, afterDiscount: 22500 },
+      whatsapp: { beforeDiscount: 25000, afterDiscount: 20000 },
+    },
     rating: 5,
     reviewCount: 18,
     ribbon: "New",
@@ -467,6 +498,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Lanjutan seri mewarnai angka dengan gambar yang lebih menantang.",
     ageRange: "Ages 3+",
     price: 25,
+    marketplace: {
+      shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
+      tokopedia: { beforeDiscount: 25000, afterDiscount: 22500 },
+      tiktokShop: { beforeDiscount: 25000, afterDiscount: 22500 },
+      whatsapp: { beforeDiscount: 25000, afterDiscount: 20000 },
+    },
     rating: 5,
     reviewCount: 12,
     featured: true,
@@ -518,6 +555,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Mewarnai sambil menjiplak garis bentuk hewan untuk motorik halus.",
     ageRange: "Ages 3+",
     price: 28,
+    marketplace: {
+      shopee: { beforeDiscount: 28000, afterDiscount: 28000 },
+      tokopedia: { beforeDiscount: 28000, afterDiscount: 25200 },
+      tiktokShop: { beforeDiscount: 28000, afterDiscount: 25200 },
+      whatsapp: { beforeDiscount: 28000, afterDiscount: 22400 },
+    },
     rating: 4.5,
     reviewCount: 21,
     ribbon: "Best Seller",
@@ -570,6 +613,12 @@ export const collectionProducts: CollectionProduct[] = [
     description: "Kenali nama-nama buah sambil mewarnai dan menjiplak garis.",
     ageRange: "Ages 3+",
     price: 28,
+    marketplace: {
+      shopee: { beforeDiscount: 28000, afterDiscount: 28000 },
+      tokopedia: { beforeDiscount: 28000, afterDiscount: 25200 },
+      tiktokShop: { beforeDiscount: 28000, afterDiscount: 25200 },
+      whatsapp: { beforeDiscount: 28000, afterDiscount: 22400 },
+    },
     rating: 4.5,
     reviewCount: 15,
     image: "/assets/images/products/coloring-book/coloring-tracing-fruit.png",
@@ -620,6 +669,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Jelajahi hewan-hewan laut lewat aktivitas mewarnai dan menjiplak.",
     ageRange: "Ages 3+",
     price: 28,
+    marketplace: {
+      shopee: { beforeDiscount: 28000, afterDiscount: 28000 },
+      tokopedia: { beforeDiscount: 28000, afterDiscount: 25200 },
+      tiktokShop: { beforeDiscount: 28000, afterDiscount: 25200 },
+      whatsapp: { beforeDiscount: 28000, afterDiscount: 22400 },
+    },
     rating: 5,
     reviewCount: 9,
     image: "/assets/images/products/coloring-book/coloring-tracing-ocean.png",
@@ -670,6 +725,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Toples aktivitas sensorik berisi pompom, kancing, dan kartu tugas edukatif.",
     ageRange: "Ages 2-5",
     price: 45,
+    marketplace: {
+      shopee: { beforeDiscount: 45000, afterDiscount: 45000 },
+      tokopedia: { beforeDiscount: 45000, afterDiscount: 40500 },
+      tiktokShop: { beforeDiscount: 45000, afterDiscount: 40500 },
+      whatsapp: { beforeDiscount: 45000, afterDiscount: 36000 },
+    },
     rating: 5,
     reviewCount: 20,
     ribbon: "New",
@@ -721,6 +782,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Matras puzzle bertekstur untuk eksplorasi raba dan stimulasi sensorik anak.",
     ageRange: "Ages 1-4",
     price: 55,
+    marketplace: {
+      shopee: { beforeDiscount: 55000, afterDiscount: 55000 },
+      tokopedia: { beforeDiscount: 55000, afterDiscount: 49500 },
+      tiktokShop: { beforeDiscount: 55000, afterDiscount: 49500 },
+      whatsapp: { beforeDiscount: 55000, afterDiscount: 44000 },
+    },
     rating: 4.5,
     reviewCount: 14,
     image: "/assets/images/products/montessori/play-mat.png",
@@ -769,6 +836,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Poster edukasi mengenal nama hewan darat dalam Bahasa Indonesia dan Inggris.",
     ageRange: "Ages 2+",
     price: 15,
+    marketplace: {
+      shopee: { beforeDiscount: 15000, afterDiscount: 15000 },
+      tokopedia: { beforeDiscount: 15000, afterDiscount: 13500 },
+      tiktokShop: { beforeDiscount: 15000, afterDiscount: 13500 },
+      whatsapp: { beforeDiscount: 15000, afterDiscount: 12000 },
+    },
     rating: 5,
     reviewCount: 34,
     ribbon: "Best Seller",
@@ -817,6 +890,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Poster edukasi mengenal nama biota laut dalam Bahasa Indonesia dan Inggris.",
     ageRange: "Ages 2+",
     price: 15,
+    marketplace: {
+      shopee: { beforeDiscount: 15000, afterDiscount: 15000 },
+      tokopedia: { beforeDiscount: 15000, afterDiscount: 13500 },
+      tiktokShop: { beforeDiscount: 15000, afterDiscount: 13500 },
+      whatsapp: { beforeDiscount: 15000, afterDiscount: 12000 },
+    },
     rating: 5,
     reviewCount: 27,
     image: "/assets/images/products/poster/hewan-laut.png",
@@ -863,6 +942,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Poster edukasi mengenal nama hewan udara dalam Bahasa Indonesia dan Inggris.",
     ageRange: "Ages 2+",
     price: 15,
+    marketplace: {
+      shopee: { beforeDiscount: 15000, afterDiscount: 15000 },
+      tokopedia: { beforeDiscount: 15000, afterDiscount: 13500 },
+      tiktokShop: { beforeDiscount: 15000, afterDiscount: 13500 },
+      whatsapp: { beforeDiscount: 15000, afterDiscount: 12000 },
+    },
     rating: 4.5,
     reviewCount: 19,
     image: "/assets/images/products/poster/hewan-udara.png",
@@ -909,6 +994,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan laminasi tulis-hapus untuk belajar mengenal huruf A-Z bersama gambar.",
     ageRange: "Ages 3+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 5,
     reviewCount: 42,
     ribbon: "Best Seller",
@@ -960,6 +1051,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan laminasi tulis-hapus untuk berlatih menulis angka 0 sampai 10.",
     ageRange: "Ages 3+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 5,
     reviewCount: 38,
     image: "/assets/images/products/wipe-and-clean/angka-0-10.png",
@@ -1009,6 +1106,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan laminasi tulis-hapus untuk mengenal nama hari dalam Bahasa Indonesia dan Inggris.",
     ageRange: "Ages 4+",
     price: 18,
+    marketplace: {
+      shopee: { beforeDiscount: 18000, afterDiscount: 18000 },
+      tokopedia: { beforeDiscount: 18000, afterDiscount: 16200 },
+      tiktokShop: { beforeDiscount: 18000, afterDiscount: 16200 },
+      whatsapp: { beforeDiscount: 18000, afterDiscount: 14400 },
+    },
     rating: 4.5,
     reviewCount: 16,
     image: "/assets/images/products/wipe-and-clean/day-of-the-week.png",
@@ -1058,6 +1161,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan laminasi tulis-hapus untuk mengenal nama bulan dalam Bahasa Indonesia dan Inggris.",
     ageRange: "Ages 4+",
     price: 18,
+    marketplace: {
+      shopee: { beforeDiscount: 18000, afterDiscount: 18000 },
+      tokopedia: { beforeDiscount: 18000, afterDiscount: 16200 },
+      tiktokShop: { beforeDiscount: 18000, afterDiscount: 16200 },
+      whatsapp: { beforeDiscount: 18000, afterDiscount: 14400 },
+    },
     rating: 4.5,
     reviewCount: 12,
     image: "/assets/images/products/wipe-and-clean/month-of-the-year.png",
@@ -1109,6 +1218,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan laminasi tulis-hapus untuk mengenal 12 macam bentuk geometris.",
     ageRange: "Ages 3+",
     price: 18,
+    marketplace: {
+      shopee: { beforeDiscount: 18000, afterDiscount: 18000 },
+      tokopedia: { beforeDiscount: 18000, afterDiscount: 16200 },
+      tiktokShop: { beforeDiscount: 18000, afterDiscount: 16200 },
+      whatsapp: { beforeDiscount: 18000, afterDiscount: 14400 },
+    },
     rating: 5,
     reviewCount: 22,
     ribbon: "New",
@@ -1159,6 +1274,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema kelinci lucu.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 5,
     reviewCount: 8,
     image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-bunny.png",
@@ -1210,6 +1331,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan ilustrasi bertema imut.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 4.5,
     reviewCount: 6,
     image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-cute.png",
@@ -1261,6 +1388,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi dokter.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 4.5,
     reviewCount: 5,
     image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-doctor.png",
@@ -1312,6 +1445,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi polisi.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 5,
     reviewCount: 9,
     image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-police.png",
@@ -1363,6 +1502,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan ilustrasi bertema sekolah.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 5,
     reviewCount: 11,
     image:
@@ -1415,6 +1560,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema profesi tentara.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 4.5,
     reviewCount: 7,
     image:
@@ -1467,6 +1618,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema unicorn yang lucu.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 5,
     reviewCount: 13,
     ribbon: "New",
@@ -1520,6 +1677,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Papan jadwal pelajaran mingguan tulis-hapus dengan tema hewan liar.",
     ageRange: "Ages 4+",
     price: 20,
+    marketplace: {
+      shopee: { beforeDiscount: 20000, afterDiscount: 20000 },
+      tokopedia: { beforeDiscount: 20000, afterDiscount: 18000 },
+      tiktokShop: { beforeDiscount: 20000, afterDiscount: 18000 },
+      whatsapp: { beforeDiscount: 20000, afterDiscount: 16000 },
+    },
     rating: 4.5,
     reviewCount: 6,
     image: "/assets/images/products/wipe-and-clean/jadwal-pelajaran-wild.png",
@@ -1571,6 +1734,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Buku mewarnai bertema unicorn dengan 13 halaman ilustrasi bergaris tebal.",
     ageRange: "Ages 3+",
     price: 25,
+    marketplace: {
+      shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
+      tokopedia: { beforeDiscount: 25000, afterDiscount: 22500 },
+      tiktokShop: { beforeDiscount: 25000, afterDiscount: 22500 },
+      whatsapp: { beforeDiscount: 25000, afterDiscount: 20000 },
+    },
     rating: 5,
     reviewCount: 17,
     featured: true,
@@ -1620,6 +1789,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Buku mewarnai bertema permainan tradisional Indonesia seperti congklak dan engklek.",
     ageRange: "Ages 3+",
     price: 25,
+    marketplace: {
+      shopee: { beforeDiscount: 25000, afterDiscount: 25000 },
+      tokopedia: { beforeDiscount: 25000, afterDiscount: 22500 },
+      tiktokShop: { beforeDiscount: 25000, afterDiscount: 22500 },
+      whatsapp: { beforeDiscount: 25000, afterDiscount: 20000 },
+    },
     rating: 5,
     reviewCount: 14,
     image:
@@ -1671,6 +1846,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
     ageRange: "Ages 5+",
     price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
     rating: 5,
     reviewCount: 24,
     ribbon: "Best Seller",
@@ -1725,6 +1906,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
     ageRange: "Ages 5+",
     price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
     rating: 5,
     reviewCount: 18,
     image: "/assets/images/products/flashcard/pengurangan-astronot-male.png",
@@ -1777,6 +1964,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
     ageRange: "Ages 5+",
     price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
     rating: 5,
     reviewCount: 21,
     image: "/assets/images/products/flashcard/perkalian-police-male.png",
@@ -1829,6 +2022,12 @@ export const collectionProducts: CollectionProduct[] = [
       "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
     ageRange: "Ages 5+",
     price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
     rating: 4.5,
     reviewCount: 15,
     image: "/assets/images/products/flashcard/pembagian-pemadam-male.png",
@@ -1908,10 +2107,14 @@ export const productDetail = {
   ],
 };
 
-// Marketplace branding is shared across every product; each platform sells
-// at its own share of that product's own price, so prices differ per
-// product instead of a single fixed amount for every page.
-const marketplacePlatforms: Array<Omit<Marketplace, "price">> = [
+// Marketplace branding is shared across every product. `price` on a product
+// is stored in thousands of Rupiah (e.g. 35 = Rp35.000). Each platform then
+// applies its own discount share on top of that original price, so the
+// original vs. discounted price differs per product instead of a single
+// fixed amount for every page.
+const marketplacePlatforms: Array<
+  Omit<Marketplace, "originalPrice" | "discountedPrice">
+> = [
   {
     name: "Shopee",
     color: "#EE4D2D",
@@ -1937,12 +2140,39 @@ const marketplacePlatforms: Array<Omit<Marketplace, "price">> = [
     icon: "chat",
   },
 ];
-const marketplacePriceShare = [1, 0.9, 0.9, 0.8];
+const marketplaceDiscountShare = [1, 0.9, 0.9, 0.8];
+const marketplacePricingKeys: Array<keyof ProductMarketplacePricing> = [
+  "shopee",
+  "tokopedia",
+  "tiktokShop",
+  "whatsapp",
+];
 
-function buildMarketplaces(basePrice: number): Marketplace[] {
+// Products with manual `marketplace` pricing (see each entry in
+// collectionProducts) use those exact before/after discount numbers. Products
+// without it (trending/related picks) fall back to a computed estimate off
+// their base price.
+function buildMarketplaces(
+  pricing: ProductMarketplacePricing | undefined,
+  basePrice: number,
+): Marketplace[] {
+  if (pricing) {
+    return marketplacePlatforms.map((platform, i) => {
+      const { beforeDiscount, afterDiscount } =
+        pricing[marketplacePricingKeys[i]];
+      return {
+        ...platform,
+        originalPrice: beforeDiscount,
+        discountedPrice: afterDiscount,
+      };
+    });
+  }
+
+  const originalPrice = Math.round(basePrice * 1000);
   return marketplacePlatforms.map((platform, i) => ({
     ...platform,
-    price: Math.round(basePrice * marketplacePriceShare[i] * 1000),
+    originalPrice,
+    discountedPrice: Math.round(originalPrice * marketplaceDiscountShare[i]),
   }));
 }
 
@@ -2074,6 +2304,7 @@ const allProducts: Array<{
   ageRange?: string;
   description?: string;
   price?: number;
+  marketplace?: ProductMarketplacePricing;
   rating?: number;
   reviewCount?: number;
   accordion?: AccordionItemData[];
@@ -2100,7 +2331,7 @@ export function getProductBySlug(slug: string): ProductDetailData | null {
     reviewCount: match.reviewCount ?? productDetail.reviewCount,
     heroImage: match.image,
     thumbnails: match.thumbnails ?? [match.image, ...productDetail.thumbnails],
-    marketplaces: buildMarketplaces(basePrice),
+    marketplaces: buildMarketplaces(match.marketplace, basePrice),
     accordion: match.accordion ?? productAccordion,
   };
 }

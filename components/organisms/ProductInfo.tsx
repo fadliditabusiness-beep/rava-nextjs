@@ -4,22 +4,26 @@ import PurchaseCard from "@/components/organisms/PurchaseCard";
 import type { Marketplace } from "@/lib/types";
 
 type ProductInfoProps = {
+  slug: string;
   category: string;
   ageRange: string;
   name: string;
   rating: number;
   reviewCount: number;
   description: string;
+  image: string;
   marketplaces: Marketplace[];
 };
 
 export default function ProductInfo({
+  slug,
   category,
   ageRange,
   name,
   rating,
   reviewCount,
   description,
+  image,
   marketplaces,
 }: ProductInfoProps) {
   return (
@@ -43,7 +47,10 @@ export default function ProductInfo({
           {description}
         </p>
       </div>
-      <PurchaseCard marketplaces={marketplaces} />
+      <PurchaseCard
+        marketplaces={marketplaces}
+        product={{ slug, name, image }}
+      />
     </div>
   );
 }
