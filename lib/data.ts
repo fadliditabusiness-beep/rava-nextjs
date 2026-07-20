@@ -255,10 +255,10 @@ export const testimonials: Testimonial[] = [
 
 // Product Listing (Collections) page — "Mainan Sensorik" category
 export const collectionHero = {
-  breadcrumb: ["Beranda", "Katalog", "Mainan Sensorik"],
-  title: "Mainan Sensorik",
+  breadcrumb: ["Beranda", "Katalog"],
+  title: "Semua Produk",
   description:
-    "Curated tools designed to stimulate curiosity and develop fine motor skills through tactile exploration. Our Scandinavian-inspired designs focus on organic textures and calming palettes.",
+    "Temukan berbagai mainan edukatif, sensory play, flashcard, buku aktivitas, dan media belajar yang dirancang untuk mendukung tumbuh kembang anak melalui pengalaman bermain yang menyenangkan.",
 };
 
 export const collectionProducts: CollectionProduct[] = [
@@ -1926,7 +1926,7 @@ export const trendingProducts: TrendingProduct[] = collectionProducts
     image: product.image,
   }));
 
-export const filterOptions = ["Usia", "Fokus Pembelajaran", "Warna"];
+export const filterOptions = [];
 export const sortOptions = [
   "Terbaru",
   "Terpopuler",
