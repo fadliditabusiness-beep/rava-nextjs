@@ -26,9 +26,9 @@ export const siteConfig = {
 
 export const navLinks = [
   { label: "Beranda", href: "/" },
-  { label: "Katalog", href: "/products" },
+  // { label: "Katalog", href: "/products" },
   { label: "Produk", href: "/products" },
-  { label: "Ulasan", href: "/#reviews" },
+  // { label: "Ulasan", href: "/#reviews" },
   { label: "FAQ", href: "/#faq" },
   { label: "Kontak", href: "/#contact" },
 ];
@@ -113,6 +113,7 @@ export const categories: Category[] = [
   {
     name: "Buku Mewarnai",
     gradient: "from-primary-container/60",
+    span: true,
     image: "/assets/images/products/coloring-book/coloring-tracing-ocean.png",
   },
   // {
@@ -133,11 +134,7 @@ export const categories: Category[] = [
   //   image:
   //     "https://lh3.googleusercontent.com/aida-public/AB6AXuDkZwpmSlHM85IBg8-CB6dvQa10XIFKFuEdCNlXFz-j0ydnF01Zi2VfBnVVcxgqYEymGUfWnc5Sk5bBuAbBPUTADf1kYz3kjbmd98_L96ogfX0K_Ts0C8MLTOo-rm1Yj8JOSP1So3e04Tjpu2-9yw1ptlvty68OWqrc3-ufqH9iV8CVnYqpro02_RU3jQdwyn-IGsrNrK-Sl0YihUNmjjtvfPk6EkcfcsKPWqHkGdrlEYbhtojGvXRAnw",
   // },
-  {
-    name: "Montessori",
-    gradient: "from-secondary/60",
-    image: "/assets/images/products/montessori/busy-jar.png",
-  },
+
   {
     name: "Poster Edukasi",
     gradient: "from-primary-container/60",
@@ -147,6 +144,12 @@ export const categories: Category[] = [
     name: "Wipe & Clean",
     gradient: "from-primary/60",
     image: "/assets/images/products/wipe-and-clean/alfabet.png",
+  },
+  {
+    name: "Montessori",
+    gradient: "from-secondary/60",
+    span: true,
+    image: "/assets/images/products/montessori/busy-jar.png",
   },
   {
     name: "Worksheet",
@@ -576,6 +579,7 @@ export const collectionProducts: CollectionProduct[] = [
     },
     rating: 4.5,
     reviewCount: 14,
+    featured: true,
     image: "/assets/images/products/montessori/play-mat.png",
     thumbnails: ["/assets/images/products/montessori/play-mat.png"],
     accordion: [
@@ -631,7 +635,7 @@ export const collectionProducts: CollectionProduct[] = [
     rating: 5,
     reviewCount: 34,
     ribbon: "Best Seller",
-    featured: true,
+    featured: false,
     image: "/assets/images/products/poster/hewan-darat.png",
     thumbnails: ["/assets/images/products/poster/hewan-darat.png"],
     accordion: [
@@ -789,7 +793,7 @@ export const collectionProducts: CollectionProduct[] = [
     rating: 5,
     reviewCount: 42,
     ribbon: "Best Seller",
-    featured: true,
+    featured: false,
     image: "/assets/images/products/wipe-and-clean/alfabet.png",
     thumbnails: ["/assets/images/products/wipe-and-clean/alfabet.png"],
     accordion: [
@@ -1528,7 +1532,7 @@ export const collectionProducts: CollectionProduct[] = [
     },
     rating: 5,
     reviewCount: 17,
-    featured: true,
+    featured: false,
     image: "/assets/images/products/worksheet/coloring-book-unicorn.png",
     thumbnails: ["/assets/images/products/worksheet/coloring-book-unicorn.png"],
     accordion: [

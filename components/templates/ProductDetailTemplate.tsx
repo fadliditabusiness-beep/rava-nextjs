@@ -43,7 +43,7 @@ export default function ProductDetailTemplate({
         </div>
 
         <RelatedProductsSection excludeSlug={product.slug} />
-        <ReviewsSection average={product.rating} reviewCount={product.reviewCount} />
+        {/* <ReviewsSection average={product.rating} reviewCount={product.reviewCount} /> */}
         <FaqSection />
       </main>
       <Footer />

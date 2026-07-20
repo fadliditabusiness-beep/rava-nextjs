@@ -36,13 +36,13 @@ export default function ProductInfo({
         <h1 className="text-display-lg-mobile md:text-display-lg font-display-lg text-primary mb-2">
           {name}
         </h1>
-        <div className="flex items-center gap-2 mb-6">
+        {/* <div className="flex items-center gap-2 mb-6">
           <StarRating rating={rating} colorClassName="text-on-tertiary-container" />
           <span className="text-body-md font-bold text-primary">
             {rating}/5
           </span>
           <span className="text-on-surface-variant">({reviewCount} reviews)</span>
-        </div>
+        </div> */}
         <p className="text-body-lg text-on-surface-variant mb-8 leading-relaxed">
           {description}
         </p>

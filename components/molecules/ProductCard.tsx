@@ -21,7 +21,9 @@ export default function ProductCard({
         {badge && (
           <span
             className={`absolute top-4 left-4 z-20 px-3 py-1 rounded-full font-label-caps text-label-caps text-white ${
-              badge === "BEST SELLER" ? "bg-on-tertiary-container" : "bg-secondary"
+              badge === "BEST SELLER"
+                ? "bg-on-tertiary-container"
+                : "bg-secondary"
             }`}
           >
             {badge}
@@ -34,13 +36,13 @@ export default function ProductCard({
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <button
+        {/* <button
           type="button"
           aria-label={`Save ${name} to favorites`}
           className="absolute bottom-4 right-4 z-20 w-12 h-12 bg-white text-primary rounded-full shadow-lg flex items-center justify-center bouncy-hover active-scale"
         >
           <MaterialIcon name="favorite" />
-        </button>
+        </button> */}
       </div>
       <div className="flex justify-between items-start mb-2">
         <div>
@@ -54,12 +56,12 @@ export default function ProductCard({
         </span>
       </div>
       <p className="text-on-surface-variant mb-4 text-sm">{description}</p>
-      <div className="flex items-center gap-1 mb-6">
+      {/* <div className="flex items-center gap-1 mb-6">
         <StarRating rating={rating} />
         <span className="text-on-surface-variant text-sm ml-2">
           ({reviewCount})
         </span>
-      </div>
+      </div> */}
       <Link
         href={`/products/${slug}`}
         className="block w-full text-center bg-primary text-on-primary py-3 rounded-full font-bold active-scale transition-all hover:bg-primary-container"
