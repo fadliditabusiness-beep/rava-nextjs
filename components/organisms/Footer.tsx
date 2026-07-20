@@ -1,9 +1,37 @@
 import Image from "next/image";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { SiShopee } from "react-icons/si";
 import MaterialIcon from "@/components/atoms/MaterialIcon";
 import FooterColumn from "@/components/molecules/FooterColumn";
-import NewsletterForm from "@/components/molecules/NewsletterForm";
 import { siteConfig } from "@/lib/data";
+import { getCurrentYear } from "@/lib/date";
 
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "#",
+    color: "#E4405F",
+    icon: <FaInstagram />,
+  },
+  {
+    label: "TikTok",
+    href: "#",
+    color: "#000000",
+    icon: <FaTiktok />,
+  },
+  {
+    label: "Shopee",
+    href: "#",
+    color: "#EE4D2D",
+    icon: <SiShopee />,
+  },
+  // {
+  //   label: "Tokopedia",
+  //   href: "#",
+  //   color: "#03AC0E",
+  //   icon: <SiTokopedia />,
+  // },
+];
 const exploreLinks = [
   { label: "Home", href: "/" },
   // { label: "Collections", href: "/products" },
@@ -64,16 +92,32 @@ export default function Footer() {
         </div>
 
         <div className="md:col-span-4">
-          <h4 className="font-bold text-primary mb-6">Join our Newsletter</h4>
+          <h4 className="font-bold text-primary mb-6">Ikuti Kami</h4>
           <p className="text-on-surface-variant mb-6">
-            Get 10% off your first order and stay updated with new releases.
+            Ikuti kami untuk mendapatkan inspirasi bermain, tips tumbuh kembang,
+            dan informasi produk terbaru.
           </p>
-          <NewsletterForm />
+          <div className="flex gap-3">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+                style={{ backgroundColor: link.color }}
+                className="w-10 h-10 rounded-full flex items-center justify-center text-white bouncy-hover active-scale"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="md:col-span-12 pt-12 mt-12 border-t border-surface-container text-center">
           <p className="text-on-surface-variant font-body-md text-body-md opacity-60">
-            © 2024 {siteConfig.name} Educational Toys. Playful Sophistication.
+            © {getCurrentYear()} {siteConfig.name} RAVA Toys. All Rights
+            Reserved.
           </p>
         </div>
       </div>
