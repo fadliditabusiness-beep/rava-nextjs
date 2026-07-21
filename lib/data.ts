@@ -1719,10 +1719,10 @@ export const collectionProducts: CollectionProduct[] = [
   },
   {
     slug: "flashcard-tabel-penjumlahan-pilot-male",
-    name: "Flashcard Tabel Penjumlahan Pilot Male",
+    name: "Penjumlahan • Pilot (Laki-laki)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
+      "Flashcard tabel penjumlahan 1-10 bertema pilot dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -1747,43 +1747,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema pilot memuat tabel penjumlahan 1 sampai 10, membantu anak menghafal hasil penjumlahan lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil penjumlahan 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel penjumlahan, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-penjumlahan-pilot-female",
-    name: "Flashcard Tabel Penjumlahan Pilot Female",
+    name: "Penjumlahan • Pilot (Perempuan)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
+      "Flashcard tabel penjumlahan 1-10 bertema pilot dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -1808,43 +1814,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema pilot memuat tabel penjumlahan 1 sampai 10, membantu anak menghafal hasil penjumlahan lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil penjumlahan 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel penjumlahan, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-pengurangan-astronot-male",
-    name: "Flashcard Tabel Pengurangan Astronot Male",
+    name: "Pengurangan • Astronot (Laki-laki)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
+      "Flashcard tabel pengurangan 1-10 bertema astronot dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -1866,43 +1878,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema astronot memuat tabel pengurangan 1 sampai 10, membantu anak menghafal hasil pengurangan lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil pengurangan 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel pengurangan, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-pengurangan-astronot-female",
-    name: "Flashcard Tabel Pengurangan Astronot Female",
+    name: "Pengurangan • Astronot (Perempuan)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
+      "Flashcard tabel pengurangan 1-10 bertema astronot dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -1924,43 +1942,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema astronot memuat tabel pengurangan 1 sampai 10, membantu anak menghafal hasil pengurangan lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil pengurangan 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel pengurangan, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-perkalian-polisi-male",
-    name: "Flashcard Tabel Perkalian Polisi Male",
+    name: "Perkalian • Polisi (Laki-laki)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
+      "Flashcard tabel perkalian 1-10 bertema polisi dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -1982,43 +2006,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema polisi memuat tabel perkalian 1 sampai 10, membantu anak menghafal hasil perkalian lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil perkalian 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel perkalian, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-perkalian-polisi-female",
-    name: "Flashcard Tabel Perkalian Polisi Female",
+    name: "Perkalian • Polisi (Perempuan)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
+      "Flashcard tabel perkalian 1-10 bertema polisi dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -2040,43 +2070,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema polisi memuat tabel perkalian 1 sampai 10, membantu anak menghafal hasil perkalian lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil perkalian 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel perkalian, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-pembagian-pemadam-male",
-    name: "Flashcard Tabel Pembagian Pemadam Kebakaran Male",
+    name: "Pembagian • Pemadam (Laki-laki)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
+      "Flashcard tabel pembagian 1-10 bertema pemadam kebakaran dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -2098,43 +2134,49 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema pemadam kebakaran memuat tabel pembagian 1 sampai 10, membantu anak menghafal hasil pembagian lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil pembagian 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel pembagian, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
   {
     slug: "flashcard-tabel-pembagian-pemadam-female",
-    name: "Flashcard Tabel Pembagian Pemadam Kebakaran Female",
+    name: "Pembagian • Pemadam (Perempuan)",
     category: "Flashcard",
     description:
-      "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
+      "Flashcard tabel pembagian 1-10 bertema pemadam kebakaran dengan ring portable, praktis untuk belajar di rumah maupun di sekolah.",
     ageRange: "Umur 5+",
     price: 30,
     marketplace: {
@@ -2156,34 +2198,40 @@ export const collectionProducts: CollectionProduct[] = [
         title: "Manfaat",
         defaultOpen: true,
         content:
-          "10 kartu lipat model kipas bertema pemadam kebakaran memuat tabel pembagian 1 sampai 10, membantu anak menghafal hasil pembagian lewat drilling yang menyenangkan.",
+          "Flashcard Tabel Matematika dari RAVA TOYS membantu anak menghafal operasi hitung dasar melalui kartu ring portable yang praktis, mudah dibawa, dan dapat digunakan kapan saja di rumah maupun di sekolah.",
       },
       {
         icon: "psychology",
         title: "Hasil Pembelajaran",
         content: [
-          "Kemampuan Berhitung: Menghafal hasil pembagian 1-10 secara cepat.",
-          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
-          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+          "Menghafal Operasi Hitung: Membantu anak menguasai tabel matematika 1-10 dengan lebih mudah.",
+          "Belajar Mandiri: Ring portable memudahkan anak belajar kapan saja dan di mana saja.",
+          "Meningkatkan Fokus: Aktivitas drilling membantu meningkatkan konsentrasi dan daya ingat.",
         ],
       },
       {
         icon: "inventory_2",
         title: "Isi Paket",
         content:
-          "1 set kartu lipat kipas berisi 10 kartu tabel pembagian, tersedia varian karakter pria dan wanita.",
+          "1 set Flashcard Tabel Matematika 1-10 sesuai varian yang dipilih, dilengkapi ring portable yang dapat dilepas pasang.",
       },
       {
         icon: "architecture",
         title: "Spesifikasi",
-        content:
-          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+        content: [
+          "Isi: Tabel Matematika 1-10",
+          "Ukuran: 5 x 14 cm",
+          "Bahan: Glossy Paper Premium",
+          "Finishing: Laminating 2 Sisi",
+          "Sudut: Round Corner",
+          "Tambahan: Dilengkapi Ring Portable",
+        ],
       },
       {
         icon: "verified_user",
         title: "Informasi Keamanan",
         content:
-          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+          "Sudut kartu menggunakan round corner agar lebih aman untuk anak. Gunakan dengan pendampingan orang tua untuk anak usia dini.",
       },
     ],
   },
