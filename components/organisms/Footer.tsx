@@ -1,37 +1,10 @@
 import Image from "next/image";
-import { FaInstagram, FaTiktok } from "react-icons/fa";
-import { SiShopee } from "react-icons/si";
 import MaterialIcon from "@/components/atoms/MaterialIcon";
 import FooterColumn from "@/components/molecules/FooterColumn";
+import SocialLinks from "@/components/molecules/SocialLinks";
 import { siteConfig } from "@/lib/data";
 import { getCurrentYear } from "@/lib/date";
 
-const socialLinks = [
-  {
-    label: "Instagram",
-    href: "#",
-    color: "#E4405F",
-    icon: <FaInstagram />,
-  },
-  {
-    label: "TikTok",
-    href: "#",
-    color: "#000000",
-    icon: <FaTiktok />,
-  },
-  {
-    label: "Shopee",
-    href: "#",
-    color: "#EE4D2D",
-    icon: <SiShopee />,
-  },
-  // {
-  //   label: "Tokopedia",
-  //   href: "#",
-  //   color: "#03AC0E",
-  //   icon: <SiTokopedia />,
-  // },
-];
 const exploreLinks = [
   { label: "Home", href: "/" },
   // { label: "Collections", href: "/products" },
@@ -97,21 +70,7 @@ export default function Footer() {
             Ikuti kami untuk mendapatkan inspirasi bermain, tips tumbuh kembang,
             dan informasi produk terbaru.
           </p>
-          <div className="flex gap-3">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                style={{ backgroundColor: link.color }}
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white bouncy-hover active-scale"
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
+          <SocialLinks />
         </div>
 
         <div className="md:col-span-12 pt-12 mt-12 border-t border-surface-container text-center">

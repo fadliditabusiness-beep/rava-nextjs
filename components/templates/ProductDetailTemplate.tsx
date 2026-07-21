@@ -24,6 +24,7 @@ export default function ProductDetailTemplate({
             mainImage={product.heroImage}
             thumbnails={product.thumbnails}
             productName={product.name}
+            category={product.category}
           />
           <ProductInfo
             slug={product.slug}

@@ -13,10 +13,21 @@ import type {
   ProductMarketplacePricing,
 } from "./types";
 
+function buildThumbnails(
+  folder: string,
+  nextFolder: string,
+  total: number,
+): string[] {
+  return Array.from({ length: total }, (_, index) => {
+    return `/assets/images/thumbnails/${folder}/${nextFolder}/${index + 1}.png`;
+  });
+}
+
 export const siteConfig = {
   name: "",
   tagline: "Belajar Seru Melalui Bermain",
   logo: "/assets/images/logo.png",
+  whatsappNumber: "6282298948991",
   announcements: [
     "Gratis Ongkir | Koleksi Terbaru | Produk Terlaris",
     "Bahan Aman | Ramah Lingkungan | Mainan Edukatif Bersertifikat",
@@ -29,8 +40,41 @@ export const navLinks = [
   // { label: "Katalog", href: "/products" },
   { label: "Produk", href: "/products" },
   // { label: "Ulasan", href: "/#reviews" },
-  { label: "FAQ", href: "/#faq" },
-  { label: "Kontak", href: "/#contact" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Kontak", href: "/contact" },
+];
+
+export const siteFaqs: FaqItem[] = [
+  {
+    question: "Bagaimana cara memesan produk RAVA Toys?",
+    answer:
+      "Pilih produk yang kamu suka, tambahkan ke keranjang, lalu isi data diri dan alamat pengiriman di halaman checkout. Pesanan akan diteruskan lewat WhatsApp untuk konfirmasi akhir.",
+  },
+  {
+    question: "Apakah bisa bayar lewat Shopee, Tokopedia, atau TikTok Shop?",
+    answer:
+      "Bisa. Selain checkout via WhatsApp, setiap produk juga punya tautan langsung ke Shopee, Tokopedia, dan TikTok Shop di halaman detail produk.",
+  },
+  {
+    question: "Apakah bahan mainan aman untuk anak-anak?",
+    answer:
+      "Aman. Semua produk menggunakan material non-toxic, bebas BPA, dan sudah melalui proses quality control sebelum dikirim.",
+  },
+  {
+    question: "Berapa lama waktu pengiriman?",
+    answer:
+      "Pesanan dikirim ke seluruh Indonesia dan biasanya diproses 1-2 hari kerja setelah pesanan dikonfirmasi lewat WhatsApp.",
+  },
+  {
+    question: "Bagaimana kalau barang yang diterima rusak atau cacat produksi?",
+    answer:
+      "Hubungi kami lewat WhatsApp maksimal 2x24 jam setelah barang diterima disertai foto/video produk, dan kami akan bantu proses penggantian.",
+  },
+  {
+    question: "Apakah bisa request tema atau desain khusus?",
+    answer:
+      "Untuk beberapa produk seperti flashcard dan wipe & clean, kami membuka request tema khusus. Silakan tanyakan ketersediaannya lewat WhatsApp.",
+  },
 ];
 
 export const heroImage = "/assets/images/hero-home.png";
@@ -1635,6 +1679,7 @@ export const collectionProducts: CollectionProduct[] = [
       "/assets/images/products/worksheet/coloring-book-permainan-tradisional.png",
     thumbnails: [
       "/assets/images/products/worksheet/coloring-book-permainan-tradisional.png",
+      ...buildThumbnails("flashcard", "penjumlahan-female-pilot", 5),
     ],
     accordion: [
       {
@@ -1673,8 +1718,8 @@ export const collectionProducts: CollectionProduct[] = [
     ],
   },
   {
-    slug: "flashcard-tabel-penjumlahan-pilot",
-    name: "Flashcard Tabel Penjumlahan Pilot",
+    slug: "flashcard-tabel-penjumlahan-pilot-male",
+    name: "Flashcard Tabel Penjumlahan Pilot Male",
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
@@ -1694,7 +1739,7 @@ export const collectionProducts: CollectionProduct[] = [
     image: "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
     thumbnails: [
       "/assets/images/products/flashcard/penjumlahan-pilot-male.png",
-      "/assets/images/products/flashcard/penjumlahan-pilot-female.png",
+      ...buildThumbnails("flashcard", "penjumlahan-male-pilot", 5),
     ],
     accordion: [
       {
@@ -1734,8 +1779,69 @@ export const collectionProducts: CollectionProduct[] = [
     ],
   },
   {
-    slug: "flashcard-tabel-pengurangan-astronot",
-    name: "Flashcard Tabel Pengurangan Astronot",
+    slug: "flashcard-tabel-penjumlahan-pilot-female",
+    name: "Flashcard Tabel Penjumlahan Pilot Female",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema pilot untuk drilling tabel penjumlahan 1 sampai 10.",
+    ageRange: "Umur 5+",
+    price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
+    rating: 5,
+    reviewCount: 24,
+    ribbon: "Best Seller",
+    featured: true,
+    trending: true,
+    image: "/assets/images/products/flashcard/penjumlahan-pilot-female.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/penjumlahan-pilot-female.png",
+      ...buildThumbnails("flashcard", "penjumlahan-male-pilot", 5),
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema pilot memuat tabel penjumlahan 1 sampai 10, membantu anak menghafal hasil penjumlahan lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil penjumlahan 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel penjumlahan, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-pengurangan-astronot-male",
+    name: "Flashcard Tabel Pengurangan Astronot Male",
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
@@ -1752,7 +1858,7 @@ export const collectionProducts: CollectionProduct[] = [
     image: "/assets/images/products/flashcard/pengurangan-astronot-male.png",
     thumbnails: [
       "/assets/images/products/flashcard/pengurangan-astronot-male.png",
-      "/assets/images/products/flashcard/pengurangan-astronot-female.png",
+      ...buildThumbnails("flashcard", "pengurangan-male-astrounout", 5),
     ],
     accordion: [
       {
@@ -1792,8 +1898,66 @@ export const collectionProducts: CollectionProduct[] = [
     ],
   },
   {
-    slug: "flashcard-tabel-perkalian-polisi",
-    name: "Flashcard Tabel Perkalian Polisi",
+    slug: "flashcard-tabel-pengurangan-astronot-female",
+    name: "Flashcard Tabel Pengurangan Astronot Female",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema astronot untuk drilling tabel pengurangan 1 sampai 10.",
+    ageRange: "Umur 5+",
+    price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
+    rating: 5,
+    reviewCount: 18,
+    image: "/assets/images/products/flashcard/pengurangan-astronot-female.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/pengurangan-astronot-female.png",
+      ...buildThumbnails("flashcard", "pengurangan-female-astronaut", 5),
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema astronot memuat tabel pengurangan 1 sampai 10, membantu anak menghafal hasil pengurangan lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil pengurangan 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel pengurangan, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-perkalian-polisi-male",
+    name: "Flashcard Tabel Perkalian Polisi Male",
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
@@ -1810,7 +1974,7 @@ export const collectionProducts: CollectionProduct[] = [
     image: "/assets/images/products/flashcard/perkalian-police-male.png",
     thumbnails: [
       "/assets/images/products/flashcard/perkalian-police-male.png",
-      "/assets/images/products/flashcard/perkalian-police-female.png",
+      ...buildThumbnails("flashcard", "perkalian-male-police", 4),
     ],
     accordion: [
       {
@@ -1850,8 +2014,66 @@ export const collectionProducts: CollectionProduct[] = [
     ],
   },
   {
-    slug: "flashcard-tabel-pembagian-pemadam",
-    name: "Flashcard Tabel Pembagian Pemadam Kebakaran",
+    slug: "flashcard-tabel-perkalian-polisi-female",
+    name: "Flashcard Tabel Perkalian Polisi Female",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema polisi untuk drilling tabel perkalian 1 sampai 10.",
+    ageRange: "Umur 5+",
+    price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
+    rating: 5,
+    reviewCount: 21,
+    image: "/assets/images/products/flashcard/perkalian-police-female.png",
+    thumbnails: [
+      "/assets/images/products/flashcard/perkalian-police-female.png",
+      ...buildThumbnails("flashcard", "perkalian-female-police", 4),
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema polisi memuat tabel perkalian 1 sampai 10, membantu anak menghafal hasil perkalian lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil perkalian 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel perkalian, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-pembagian-pemadam-male",
+    name: "Flashcard Tabel Pembagian Pemadam Kebakaran Male",
     category: "Flashcard",
     description:
       "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
@@ -1868,7 +2090,65 @@ export const collectionProducts: CollectionProduct[] = [
     image: "/assets/images/products/flashcard/pembagian-pemadam-male.png",
     thumbnails: [
       "/assets/images/products/flashcard/pembagian-pemadam-male.png",
+      ...buildThumbnails("flashcard", "pembagian-male-fire-figter", 5),
+    ],
+    accordion: [
+      {
+        icon: "eco",
+        title: "Manfaat",
+        defaultOpen: true,
+        content:
+          "10 kartu lipat model kipas bertema pemadam kebakaran memuat tabel pembagian 1 sampai 10, membantu anak menghafal hasil pembagian lewat drilling yang menyenangkan.",
+      },
+      {
+        icon: "psychology",
+        title: "Hasil Pembelajaran",
+        content: [
+          "Kemampuan Berhitung: Menghafal hasil pembagian 1-10 secara cepat.",
+          "Motorik Halus: Membuka dan melipat kartu kipas melatih koordinasi jari.",
+          "Fokus & Ketelitian: Melatih konsentrasi mengikuti urutan tabel.",
+        ],
+      },
+      {
+        icon: "inventory_2",
+        title: "Isi Paket",
+        content:
+          "1 set kartu lipat kipas berisi 10 kartu tabel pembagian, tersedia varian karakter pria dan wanita.",
+      },
+      {
+        icon: "architecture",
+        title: "Spesifikasi",
+        content:
+          "Material: kertas art karton laminasi. Ukuran per kartu: 6x18cm, disatukan dengan ring.",
+      },
+      {
+        icon: "verified_user",
+        title: "Informasi Keamanan",
+        content:
+          "Tinta cetak non-toxic, tepi kartu membulat aman untuk anak usia 5 tahun ke atas.",
+      },
+    ],
+  },
+  {
+    slug: "flashcard-tabel-pembagian-pemadam-female",
+    name: "Flashcard Tabel Pembagian Pemadam Kebakaran Female",
+    category: "Flashcard",
+    description:
+      "Kartu lipat kipas bertema pemadam kebakaran untuk drilling tabel pembagian 1 sampai 10.",
+    ageRange: "Umur 5+",
+    price: 30,
+    marketplace: {
+      shopee: { beforeDiscount: 30000, afterDiscount: 30000 },
+      tokopedia: { beforeDiscount: 30000, afterDiscount: 27000 },
+      tiktokShop: { beforeDiscount: 30000, afterDiscount: 27000 },
+      whatsapp: { beforeDiscount: 30000, afterDiscount: 24000 },
+    },
+    rating: 4.5,
+    reviewCount: 15,
+    image: "/assets/images/products/flashcard/pembagian-pemadam-female.png",
+    thumbnails: [
       "/assets/images/products/flashcard/pembagian-pemadam-female.png",
+      ...buildThumbnails("flashcard", "pembagian-female-fire-fighter", 5),
     ],
     accordion: [
       {

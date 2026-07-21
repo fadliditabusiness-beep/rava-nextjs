@@ -5,8 +5,7 @@ import type { FormEvent } from "react";
 import Link from "next/link";
 import MaterialIcon from "@/components/atoms/MaterialIcon";
 import { useCartStore, SHIPPING_ESTIMATE } from "@/lib/store/cart-store";
-
-const WHATSAPP_NUMBER = "6282298948991";
+import { siteConfig } from "@/lib/data";
 
 function formatRupiah(value: number) {
   return `Rp${Math.round(value).toLocaleString("id-ID")}`;
@@ -111,7 +110,7 @@ ${kodePos}`,
     sections.push("Terima kasih 🙏");
 
     const message = sections.join("\n\n");
-    window.location.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.location.href = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
   return (

@@ -7,12 +7,14 @@ type ProductGalleryProps = {
   mainImage: string;
   thumbnails: string[];
   productName: string;
+  category: string;
 };
 
 export default function ProductGallery({
   mainImage,
   thumbnails,
   productName,
+  category,
 }: ProductGalleryProps) {
   const [active, setActive] = useState(mainImage);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,7 +28,11 @@ export default function ProductGallery({
           fill
           priority
           sizes="(max-width: 1024px) 100vw, 60vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          className={
+            activeIndex > 0 && category === "Flashcard"
+              ? "object-contain group-hover:scale-105 transition-transform duration-700"
+              : "object-cover group-hover:scale-105 transition-transform duration-700"
+          }
         />
       </div>
       <div className="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
