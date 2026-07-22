@@ -33,7 +33,7 @@ export default function CollectionProductCard({
       )}
       <Link
         href={`/products/${slug}`}
-        className="w-full aspect-square mb-stack-md relative overflow-hidden rounded-lg bg-surface-container-low block"
+        className="bg-surface-container-lowest bg-[url('/assets/images/background.png')] bg-cover bg-center  w-full aspect-square mb-stack-md relative overflow-hidden rounded-lg bg-surface-container-low block"
       >
         <Image
           src={image}

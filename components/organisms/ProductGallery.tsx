@@ -21,7 +21,7 @@ export default function ProductGallery({
 
   return (
     <div className="lg:col-span-7 space-y-6">
-      <div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-xl aspect-[1.79] group relative">
+      <div className="bg-surface-container-lowest bg-[url('/assets/images/background.png')] bg-cover bg-center rounded-xl overflow-hidden shadow-xl aspect-[1.79] group relative">
         <Image
           src={active}
           alt={`${productName} Featured`}
