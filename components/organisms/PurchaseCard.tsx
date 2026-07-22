@@ -20,13 +20,13 @@ export default function PurchaseCard({
       <h3 className="text-headline-md font-headline-md text-primary mb-2">
         Choose Where to Buy
       </h3>
-      {marketplaces.map((mp) =>
-        mp.icon === "chat" ? (
-          <WhatsAppOrderControl key={mp.name} {...mp} product={product} />
-        ) : (
-          <MarketplaceLink key={mp.name} {...mp} />
-        ),
-      )}
+      {marketplaces.map((mp) => {
+        if (mp.icon === "chat") {
+          return <WhatsAppOrderControl key={mp.name} {...mp} product={product} />;
+        }
+        if (!mp.link) return null;
+        return <MarketplaceLink key={mp.name} {...mp} link={mp.link} />;
+      })}
       <p className="text-center text-[12px] text-on-surface-variant font-medium mt-4">
         Secure checkout on partner platforms.
       </p>

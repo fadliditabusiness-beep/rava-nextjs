@@ -23,10 +23,14 @@ export type MarketplacePricing = {
   afterDiscount: number;
 };
 
+export type MarketplaceLinkInfo = {
+  link?: string;
+};
+
 export type ProductMarketplacePricing = {
-  shopee: MarketplacePricing;
-  tokopedia: MarketplacePricing;
-  tiktokShop: MarketplacePricing;
+  shopee: MarketplaceLinkInfo;
+  tokopedia: MarketplaceLinkInfo;
+  tiktokShop: MarketplaceLinkInfo;
   whatsapp: MarketplacePricing;
 };
 
@@ -107,6 +111,7 @@ export type Marketplace = {
   color: string;
   hoverColor: string;
   icon: string;
+  link?: string;
 };
 
 export type ProductDetailData = {
