@@ -31,10 +31,17 @@ export default function AccordionItem({
         <div className="px-stack-md pb-stack-md text-on-surface-variant space-y-2">
           {content.map((line) => {
             const [label, ...rest] = line.split(":");
+            const hasDescription = rest.join(":").trim().length > 0;
             return (
               <p key={label}>
-                <strong>{label}:</strong>
-                {rest.join(":")}
+                {hasDescription ? (
+                  <>
+                    <strong>{label}:</strong>
+                    {rest.join(":")}
+                  </>
+                ) : (
+                  line
+                )}
               </p>
             );
           })}

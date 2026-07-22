@@ -23,6 +23,84 @@ function buildThumbnails(
   });
 }
 
+const shopeeWipeAndCleanTags =
+  "poster edukasi anak, wipe and clean, wipe clean, poster tracing, tracing anak, poster alfabet, poster angka, poster bentuk, poster shapes, poster days of the week, poster months of the year, poster belajar anak, belajar huruf, belajar angka, belajar bahasa inggris, bilingual, media belajar anak, poster PAUD, poster TK, homeschooling, preschool, montessori, reusable poster, poster A4, Rava Toys";
+
+const wipeAndCleanHashtags =
+  "#RavaToys #PosterEdukasi #WipeAndClean #TracingAnak #PosterAlfabet #PosterAngka #PosterBentuk #DaysOfTheWeek #MonthsOfTheYear #BelajarMenulis #BelajarHuruf #BelajarAngka #PosterA4 #PAUD #TK #Preschool #Homeschooling #Montessori #EdukasiAnak";
+
+function createWipeAndCleanAccordion(
+  learningFocus: string,
+): AccordionItemData[] {
+  return [
+    {
+      icon: "eco",
+      title: "Tentang Produk",
+      defaultOpen: true,
+      content: `Poster edukasi Wipe and Clean dari Rava Toys untuk ${learningFocus}. Dapat ditulis menggunakan spidol whiteboard lalu dihapus kembali, sehingga bisa digunakan berulang kali.`,
+    },
+    {
+      icon: "psychology",
+      title: "Keunggulan Produk",
+      content: [
+        "Wipe and Clean, dapat ditulis dan dihapus berkali-kali.",
+        "Ukuran A4 yang praktis dengan ilustrasi menarik dan penuh warna.",
+        "Melatih kemampuan tracing atau menebalkan tulisan.",
+        "Bilingual Bahasa Indonesia dan English.",
+        "Membantu melatih motorik halus, koordinasi tangan, dan konsentrasi.",
+        "Cocok untuk belajar di rumah, PAUD, TK, dan homeschooling.",
+      ],
+    },
+    {
+      icon: "category",
+      title: "Varian Tersedia",
+      content: [
+        "Alfabet",
+        "Angka 0-10",
+        "Shapes / Bentuk",
+        "Days of the Week",
+        "Months of the Year",
+        "Jam / Time",
+      ],
+    },
+    {
+      icon: "architecture",
+      title: "Spesifikasi",
+      content: [
+        "Brand: Rava Toys",
+        "Ukuran: A4",
+        "Jenis: Poster Edukasi Wipe and Clean",
+        "Bahasa: Indonesia dan English",
+        "Dapat digunakan berulang kali dengan spidol whiteboard.",
+      ],
+    },
+    {
+      icon: "inventory_2",
+      title: "Isi Paket",
+      content: "1 x Poster Wipe and Clean sesuai varian yang dipilih.",
+    },
+    {
+      icon: "verified_user",
+      title: "Catatan",
+      content: [
+        "Pilih varian sebelum checkout.",
+        "Gunakan spidol whiteboard agar mudah dihapus.",
+        "Warna produk mungkin sedikit berbeda karena pencahayaan dan layar.",
+      ],
+    },
+    {
+      icon: "sell",
+      title: "Tag Shopee",
+      content: shopeeWipeAndCleanTags,
+    },
+    {
+      icon: "tag",
+      title: "Hashtag",
+      content: wipeAndCleanHashtags,
+    },
+  ];
+}
+
 export const siteConfig = {
   name: "",
   tagline: "Belajar Seru Melalui Bermain",
@@ -868,7 +946,7 @@ export const collectionProducts: CollectionProduct[] = [
     name: "Wipe & Clean Alfabet",
     category: "Wipe & Clean",
     description:
-      "Papan laminasi tulis-hapus untuk belajar mengenal huruf A-Z bersama gambar.",
+      "Belajar menulis huruf jadi lebih seru dengan Poster Wipe and Clean Alfabet dari Rava Toys.",
     ageRange: "Umur 3+",
     price: 20,
     marketplace: {
@@ -884,49 +962,16 @@ export const collectionProducts: CollectionProduct[] = [
     trending: true,
     image: "/assets/images/products/wipe-and-clean/alfabet.png",
     thumbnails: ["/assets/images/products/wipe-and-clean/alfabet.png"],
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Papan laminasi berisi huruf A sampai Z lengkap dengan gambar dan garis putus-putus untuk berlatih menulis huruf berulang kali menggunakan spidol khusus.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Pengenalan Huruf: Menghafal bentuk huruf besar A-Z lewat gambar pendamping.",
-          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
-          "Kosakata Dwibahasa: Mengenal nama benda dalam Bahasa Indonesia dan Inggris.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content:
-          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 3 tahun ke atas.",
-      },
-    ],
+    accordion: createWipeAndCleanAccordion(
+      "mengenal huruf dan berlatih menulis alfabet",
+    ),
   },
   {
     slug: "wipe-clean-angka-0-10",
     name: "Wipe & Clean Angka 0-10",
     category: "Wipe & Clean",
     description:
-      "Papan laminasi tulis-hapus untuk berlatih menulis angka 0 sampai 10.",
+      "Belajar menulis angka jadi lebih seru dengan Poster Wipe and Clean Angka 0-10 dari Rava Toys.",
     ageRange: "Umur 3+",
     price: 20,
     marketplace: {
@@ -939,49 +984,16 @@ export const collectionProducts: CollectionProduct[] = [
     reviewCount: 38,
     image: "/assets/images/products/wipe-and-clean/angka-0-10.png",
     thumbnails: ["/assets/images/products/wipe-and-clean/angka-0-10.png"],
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Papan laminasi berisi angka 0 sampai 10 dengan garis putus-putus membantu anak berlatih menulis angka dengan benar secara berulang.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Pengenalan Angka: Menghafal bentuk dan urutan angka 0-10.",
-          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
-          "Konsentrasi: Melatih fokus menyelesaikan tiap angka satu per satu.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content:
-          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 3 tahun ke atas.",
-      },
-    ],
+    accordion: createWipeAndCleanAccordion(
+      "mengenal dan berlatih menulis angka 0-10",
+    ),
   },
   {
     slug: "wipe-clean-day-of-the-week",
     name: "Wipe & Clean Hari dalam Seminggu",
     category: "Wipe & Clean",
     description:
-      "Papan laminasi tulis-hapus untuk mengenal nama hari dalam Bahasa Indonesia dan Inggris.",
+      "Belajar menulis nama hari jadi lebih seru dengan Poster Wipe and Clean Days of the Week dari Rava Toys.",
     ageRange: "Umur 4+",
     price: 18,
     marketplace: {
@@ -994,49 +1006,16 @@ export const collectionProducts: CollectionProduct[] = [
     reviewCount: 16,
     image: "/assets/images/products/wipe-and-clean/day-of-the-week.png",
     thumbnails: ["/assets/images/products/wipe-and-clean/day-of-the-week.png"],
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Papan laminasi memuat 7 nama hari dalam Bahasa Indonesia dan Inggris lengkap dengan garis putus-putus untuk berlatih menulis.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Pengenalan Waktu: Menghafal urutan hari dalam seminggu.",
-          "Kosakata Dwibahasa: Mengenal nama hari dalam Bahasa Indonesia dan Inggris.",
-          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content:
-          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
-      },
-    ],
+    accordion: createWipeAndCleanAccordion(
+      "mengenal dan berlatih menulis nama hari dalam Bahasa Indonesia dan English",
+    ),
   },
   {
     slug: "wipe-clean-month-of-the-year",
     name: "Wipe & Clean Bulan dalam Setahun",
     category: "Wipe & Clean",
     description:
-      "Papan laminasi tulis-hapus untuk mengenal nama bulan dalam Bahasa Indonesia dan Inggris.",
+      "Belajar menulis nama bulan jadi lebih seru dengan Poster Wipe and Clean Months of the Year dari Rava Toys.",
     ageRange: "Umur 4+",
     price: 18,
     marketplace: {
@@ -1051,49 +1030,16 @@ export const collectionProducts: CollectionProduct[] = [
     thumbnails: [
       "/assets/images/products/wipe-and-clean/month-of-the-year.png",
     ],
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Papan laminasi memuat 12 nama bulan dalam Bahasa Indonesia dan Inggris lengkap dengan garis putus-putus untuk berlatih menulis.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Pengenalan Waktu: Menghafal urutan bulan dalam setahun.",
-          "Kosakata Dwibahasa: Mengenal nama bulan dalam Bahasa Indonesia dan Inggris.",
-          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content:
-          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 4 tahun ke atas.",
-      },
-    ],
+    accordion: createWipeAndCleanAccordion(
+      "mengenal dan berlatih menulis nama bulan dalam Bahasa Indonesia dan English",
+    ),
   },
   {
     slug: "wipe-clean-shape",
     name: "Wipe & Clean Bentuk",
     category: "Wipe & Clean",
     description:
-      "Papan laminasi tulis-hapus untuk mengenal 12 macam bentuk geometris.",
+      "Belajar mengenal dan menebalkan bentuk jadi lebih seru dengan Poster Wipe and Clean Shapes dari Rava Toys.",
     ageRange: "Umur 3+",
     price: 18,
     marketplace: {
@@ -1107,42 +1053,9 @@ export const collectionProducts: CollectionProduct[] = [
     ribbon: "New",
     image: "/assets/images/products/wipe-and-clean/shape.png",
     thumbnails: ["/assets/images/products/wipe-and-clean/shape.png"],
-    accordion: [
-      {
-        icon: "eco",
-        title: "Manfaat",
-        defaultOpen: true,
-        content:
-          "Papan laminasi memuat 12 bentuk geometris seperti lingkaran, segitiga, hingga segi enam, lengkap dengan garis putus-putus untuk berlatih menebalkan bentuk.",
-      },
-      {
-        icon: "psychology",
-        title: "Hasil Pembelajaran",
-        content: [
-          "Pengenalan Bentuk: Mengenal 12 macam bentuk geometris dasar.",
-          "Kosakata Dwibahasa: Mengenal nama bentuk dalam Bahasa Indonesia dan Inggris.",
-          "Motorik Halus: Menebalkan garis putus-putus melatih genggaman alat tulis.",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Isi Paket",
-        content:
-          "1 papan laminasi Wipe & Clean ukuran A3 dan 1 spidol non-permanen.",
-      },
-      {
-        icon: "architecture",
-        title: "Spesifikasi",
-        content:
-          "Ukuran: A3 (29.7x42cm). Bahan: laminasi glossy tahan air, dapat dihapus dan ditulis ulang.",
-      },
-      {
-        icon: "verified_user",
-        title: "Informasi Keamanan",
-        content:
-          "Tinta spidol non-toxic dan mudah dihapus dengan lap kering, aman untuk anak usia 3 tahun ke atas.",
-      },
-    ],
+    accordion: createWipeAndCleanAccordion(
+      "mengenal bentuk dan berlatih menebalkan garis",
+    ),
   },
   {
     slug: "wipe-clean-jadwal-pelajaran-bunny",
